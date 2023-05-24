@@ -1,4 +1,4 @@
-package com.example.case;
+package com.example.casestudy;
 
 import java.io.*;
 import javax.servlet.http.*;
