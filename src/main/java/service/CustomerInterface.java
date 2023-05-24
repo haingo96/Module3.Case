@@ -1,13 +1,14 @@
 package service;
 
-import model.User;
+import model.House;
 
 import java.util.List;
 
+
 public interface CustomerInterface {
 
-    void selectUser(boolean status);
-
+    List<House> findAll();
+    int findIndex(String email);
 
 
 

@@ -10,10 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f3c1b8-00d4-4fa5-8270-88294343692d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TestManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TestManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/ownerhomepage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudy/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudy/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbScript.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TestManage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +80,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/JDBC",
+    "last_opened_file_path": "D:/Module3.Case",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -186,7 +198,9 @@
       <option name="presentableId" value="Default" />
       <updated>1684892669689</updated>
       <workItem from="1684892670996" duration="2852000" />
-      <workItem from="1684896330651" duration="7103000" />
+      <workItem from="1684896330651" duration="10773000" />
+      <workItem from="1684909541343" duration="14607000" />
+      <workItem from="1684934000156" duration="2282000" />
     </task>
     <servers />
   </component>
