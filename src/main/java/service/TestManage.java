@@ -1,2 +1,4 @@
-package service;public class TestManage {
+package service;
+
+public class TestManage {
 }
