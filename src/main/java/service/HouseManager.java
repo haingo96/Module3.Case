@@ -41,7 +41,7 @@ public class HouseManager {
                 int houseId = resultSet.getInt("house_id");
                 double price = resultSet.getDouble("price");
                 LocalDate viewDate = resultSet.getDate("view_date").toLocalDate();
-                LocalDate unavailableUntil = resultSet.getDate("unavaliable_until").toLocalDate();
+                LocalDate unavailableUntil = resultSet.getDate("unavailable_until").toLocalDate();
                 String area = resultSet.getString("area");
                 String type = resultSet.getString("type");
                 boolean status = resultSet.getBoolean("status");

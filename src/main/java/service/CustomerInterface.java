@@ -10,6 +10,7 @@ public interface CustomerInterface {
 
     List<House> findAll();
 
-    List<House> findIndex(String address, LocalDate unavailableUntil );
+//    List<House> findIndex(int address);
+     List<House> findIndexID(int status,LocalDate unavailable_until);
 
 }

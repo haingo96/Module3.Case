@@ -43,9 +43,9 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-<%--                                <a class="" href="">--%>
-<%--                                    Sign up--%>
-<%--                                </a>--%>
+                                <%--                                <a class="" href="">--%>
+                                <%--                                    Sign up--%>
+                                <%--                                </a>--%>
                             </li>
                         </div>
                     </ul>
@@ -66,7 +66,7 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
-                            <a href="teaser-html/about.jsp">ABOUT</a>
+                            <a href="about.jsp">ABOUT</a>
                             <a href="house.jsp">HOUSE</a>
                             <a href="teaser-html/price.jsp">PRICING</a>
                             <a href="teaser-html/contact.jsp">CONTACT US</a>
@@ -113,15 +113,17 @@
                 <div class="col-md-5">
                     <input type="text" name="form-control" class="form-control" placeholder="Search Your Address">
                     <input type="hidden" name="action" value="search">
-                </div>
-                <div class="col-md-5">
-                    <input type="text" name="form-control1" class="form-control" placeholder="Unavaliable Until">
-                    <input type="hidden" name="action" value="search">
-                </div>
-                <div class="col-md-2">
                     <button type="submit" class="">
                         search
                     </button>
+                    <%--                </div>--%>
+                    <%--&lt;%&ndash;                <div class="col-md-5">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                    <input type="text" name="form-control1" class="form-control" placeholder="Unavaliable Until">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                    <input type="hidden" name="action" value="search">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+                    <%--                <div class="col-md-2">--%>
+                    <%--                   --%>
+                    <%--                </div>--%>
                 </div>
             </div>
         </form>

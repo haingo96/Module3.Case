@@ -72,7 +72,7 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="../index.jsp">HOME</a>
-                            <a href="teaser-html/about.jsp">ABOUT</a>
+                            <a href="about.jsp">ABOUT</a>
                             <a href="teaser-html/house.jsp">HOUSE</a>
                             <a href="teaser-html/price.jsp">PRICING</a>
                             <a href="teaser-html/contact.jsp">CONTACT US</a>

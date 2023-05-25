@@ -10,20 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f3c1b8-00d4-4fa5-8270-88294343692d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/house.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/addhouseform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/addhouseform.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/house.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/ownerhomepage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/price.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/price.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Quan_ly_ung_dung&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Module3.Case&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,8 +93,12 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Module3.Case\src\main\webapp\WEB-INF" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Module3.Case\src\main\webapp" />
+      <recent name="D:\Module3.Case\src\main\webapp\about" />
       <recent name="D:\Module3.Case\src\main\webapp\teaser-html" />
     </key>
   </component>
@@ -213,7 +218,9 @@
       <workItem from="1684937248432" duration="9803000" />
       <workItem from="1684948061086" duration="311000" />
       <workItem from="1684948384500" duration="1729000" />
-      <workItem from="1684975245391" duration="3765000" />
+      <workItem from="1684975245391" duration="34899000" />
+      <workItem from="1685019182848" duration="1076000" />
+      <workItem from="1685020278073" duration="2358000" />
     </task>
     <servers />
   </component>

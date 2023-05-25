@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 
@@ -67,7 +68,7 @@
                         <div id="myNav" class="overlay">
                             <div class="overlay-content">
                                 <a href="index.jsp">HOME</a>
-                                <a href="teaser-html/about.jsp">ABOUT</a>
+                                <a href="about.jsp">ABOUT</a>
                                 <a href="house.jsp">HOUSE</a>
                                 <a href="teaser-html/price.jsp">PRICING</a>
                                 <a href="teaser-html/contact.jsp">CONTACT US</a>
@@ -88,239 +89,254 @@
                 <h2>
                     House For Sale
                 </h2>
+                <br>
+                <form action="">
+                <input type="text" name="dateSearch" class="form-control" placeholder="Search Your Date">
+                <input type="text" name="dateSearch1" class="form-control" placeholder="Search Your Status">
+                <input type="hidden" name="action" value="searchDate">
+                <button type="submit" class=""><b>search</b></button>
+                </form>
+                <c:forEach var="house" items="${house}">
 
             </div>
             <div class="sale_container">
                 <div class="box">
                     <div class="img-box">
-                        <img src="teaser-html/images/s-1.jpg" alt="">
+                        <a href="/Owenr?action=view&houseId=${house.getHouseId()}"><img src="teaser-html/images/s-1.jpg" alt=""></a>
                     </div>
                     <div class="detail-box">
                         <h6>
                             apertments house
                         </h6>
+
+                        <p>
+                           ${house.getHouseId()}
+                            ${house.getPrice()}
+                            ${house.getViewDate()}
+                            ${house.getUnavailableUntil()}
+                            ${house.getArea()}
+                            ${house.getType()}
+                            ${house.isStatus()}
+                            ${house.getAddress()}
+                            ${house.getRenterId()}
+                            ${house.ownerId}
+                            ${house.getDescription()}
+
+                        </p>
+
+                    </div>
+                </div>
+                </c:forEach>
+
+            </div>
+        </div>
+    </section>
+<%--                <div class="box">--%>
+<%--                    <div class="img-box">--%>
+<%--                        <img src="teaser-html/images/s-2.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="detail-box">--%>
+<%--                        <h6>--%>
+<%--                            apertments house--%>
+<%--                        </h6>--%>
 <%--                        <p>--%>
-<%--                            ${requestScope["house"].getHouseId()}--%>
-<%--                            ${requestScope["house"].getPrice()}--%>
-<%--                            ${requestScope["house"].getViewDate()}--%>
-<%--                            ${requestScope["house"].getUnavailableUntil()}--%>
-<%--                            ${requestScope["house"].getArea()}--%>
-<%--                            ${requestScope["house"].getType()}--%>
-<%--                            ${requestScope["house"].isStatus()}--%>
-<%--                            ${requestScope["house"].getAddressId()}--%>
-<%--                            ${requestScope["house"].getRenterId()}--%>
-<%--                            ${requestScope["house"].getOwenr()}--%>
-<%--                            ${requestScope["house"].getDescription()}--%>
-
+<%--                            There are many variations of passages of Lorem Ipsum available, but--%>
 <%--                        </p>--%>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="teaser-html/images/s-2.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="teaser-html/images/s-3.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="teaser-html/images/s-4.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="teaser-html/images/s-5.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="teaser-html/images/s-6.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-box">
-                <a href="">
-                    Find More
-                </a>
-            </div>
-        </div>
-    </section>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--                <div class="box">--%>
+<%--                    <div class="img-box">--%>
+<%--                        <img src="teaser-html/images/s-3.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="detail-box">--%>
+<%--                        <h6>--%>
+<%--                            apertments house--%>
+<%--                        </h6>--%>
+<%--                        <p>--%>
+<%--                            There are many variations of passages of Lorem Ipsum available, but--%>
+<%--                        </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--                <div class="box">--%>
+<%--                    <div class="img-box">--%>
+<%--                        <img src="teaser-html/images/s-4.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="detail-box">--%>
+<%--                        <h6>--%>
+<%--                            apertments house--%>
+<%--                        </h6>--%>
+<%--                        <p>--%>
+<%--                            There are many variations of passages of Lorem Ipsum available, but--%>
+<%--                        </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--                <div class="box">--%>
+<%--                    <div class="img-box">--%>
+<%--                        <img src="teaser-html/images/s-5.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="detail-box">--%>
+<%--                        <h6>--%>
+<%--                            apertments house--%>
+<%--                        </h6>--%>
+<%--                        <p>--%>
+<%--                            There are many variations of passages of Lorem Ipsum available, but--%>
+<%--                        </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--                <div class="box">--%>
+<%--                    <div class="img-box">--%>
+<%--                        <img src="teaser-html/images/s-6.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="detail-box">--%>
+<%--                        <h6>--%>
+<%--                            apertments house--%>
+<%--                        </h6>--%>
+<%--                        <p>--%>
+<%--                            There are many variations of passages of Lorem Ipsum available, but--%>
+<%--                        </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="btn-box">--%>
+<%--                <a href="/Owenr">--%>
+<%--                    Out--%>
+<%--                </a>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </section>--%>
 
-    <!-- end sale section -->
+<%--    <!-- end sale section -->--%>
 
 
-    <!-- info section -->
-    <section class="info_section ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="info_contact">
-                        <h5>
-                            About Apartment
-                        </h5>
-                        <div>
-                            <div class="img-box">
-                                <img src="teaser-html/images/location.png" width="18px" alt="">
-                            </div>
-                            <p>
-                                Address
-                            </p>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                                <img src="teaser-html/images/phone.png" width="12px" alt="">
-                            </div>
-                            <p>
-                                +01 1234567890
-                            </p>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                                <img src="teaser-html/images/mail.png" width="18px" alt="">
-                            </div>
-                            <p>
-                                demo@gmail.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="info_info">
-                        <h5>
-                            Information
-                        </h5>
-                        <p>
-                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                </div>
+<%--    <!-- info section -->--%>
+<%--    <section class="info_section ">--%>
+<%--        <div class="container">--%>
+<%--            <div class="row">--%>
+<%--                <div class="col-md-3">--%>
+<%--                    <div class="info_contact">--%>
+<%--                        <h5>--%>
+<%--                            About Apartment--%>
+<%--                        </h5>--%>
+<%--                        <div>--%>
+<%--                            <div class="img-box">--%>
+<%--                                <img src="teaser-html/images/location.png" width="18px" alt="">--%>
+<%--                            </div>--%>
+<%--                            <p>--%>
+<%--                                Address--%>
+<%--                            </p>--%>
+<%--                        </div>--%>
+<%--                        <div>--%>
+<%--                            <div class="img-box">--%>
+<%--                                <img src="teaser-html/images/phone.png" width="12px" alt="">--%>
+<%--                            </div>--%>
+<%--                            <p>--%>
+<%--                                +01 1234567890--%>
+<%--                            </p>--%>
+<%--                        </div>--%>
+<%--                        <div>--%>
+<%--                            <div class="img-box">--%>
+<%--                                <img src="teaser-html/images/mail.png" width="18px" alt="">--%>
+<%--                            </div>--%>
+<%--                            <p>--%>
+<%--                                demo@gmail.com--%>
+<%--                            </p>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--                <div class="col-md-3">--%>
+<%--                    <div class="info_info">--%>
+<%--                        <h5>--%>
+<%--                            Information--%>
+<%--                        </h5>--%>
+<%--                        <p>--%>
+<%--                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt--%>
+<%--                        </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
 
-                <div class="col-md-3">
-                    <div class="info_links">
-                        <h5>
-                            Useful Link
-                        </h5>
-                        <ul>
-                            <li>
-                                <a href="">
-                                    There are many
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    variations of
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    passages of
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lorem Ipsum
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    available, but
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    the i
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="info_form ">
-                        <h5>
-                            Newsletter
-                        </h5>
-                        <form action="">
-                            <input type="email" placeholder="Enter your email">
-                            <button>
-                                Subscribe
-                            </button>
-                        </form>
-                        <div class="social_box">
-                            <a href="">
-                                <img src="teaser-html/images/fb.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="teaser-html/images/twitter.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="teaser-html/images/linkedin.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="teaser-html/images/youtube.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<%--                <div class="col-md-3">--%>
+<%--                    <div class="info_links">--%>
+<%--                        <h5>--%>
+<%--                            Useful Link--%>
+<%--                        </h5>--%>
+<%--                        <ul>--%>
+<%--                            <li>--%>
+<%--                                <a href="">--%>
+<%--                                    There are many--%>
+<%--                                </a>--%>
+<%--                            </li>--%>
+<%--                            <li>--%>
+<%--                                <a href="">--%>
+<%--                                    variations of--%>
+<%--                                </a>--%>
+<%--                            </li>--%>
+<%--                            <li>--%>
+<%--                                <a href="">--%>
+<%--                                    passages of--%>
+<%--                                </a>--%>
+<%--                            </li>--%>
+<%--                            <li>--%>
+<%--                                <a href="">--%>
+<%--                                    Lorem Ipsum--%>
+<%--                                </a>--%>
+<%--                            </li>--%>
+<%--                            <li>--%>
+<%--                                <a href="">--%>
+<%--                                    available, but--%>
+<%--                                </a>--%>
+<%--                            </li>--%>
+<%--                            <li>--%>
+<%--                                <a href="">--%>
+<%--                                    the i--%>
+<%--                                </a>--%>
+<%--                            </li>--%>
+<%--                        </ul>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--                <div class="col-md-3">--%>
+<%--                    <div class="info_form ">--%>
+<%--                        <h5>--%>
+<%--                            Newsletter--%>
+<%--                        </h5>--%>
+<%--                        <form action="">--%>
+<%--                            <input type="email" placeholder="Enter your email">--%>
+<%--                            <button>--%>
+<%--                                Subscribe--%>
+<%--                            </button>--%>
+<%--                        </form>--%>
+<%--                        <div class="social_box">--%>
+<%--                            <a href="">--%>
+<%--                                <img src="teaser-html/images/fb.png" alt="">--%>
+<%--                            </a>--%>
+<%--                            <a href="">--%>
+<%--                                <img src="teaser-html/images/twitter.png" alt="">--%>
+<%--                            </a>--%>
+<%--                            <a href="">--%>
+<%--                                <img src="teaser-html/images/linkedin.png" alt="">--%>
+<%--                            </a>--%>
+<%--                            <a href="">--%>
+<%--                                <img src="teaser-html/images/youtube.png" alt="">--%>
+<%--                            </a>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </section>--%>
 
     <!-- end info_section -->
 
 
     <!-- footer section -->
-    < class="container-fluid footer_section ">
-    <div class="container">
-        <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
-        </p>
-    </div>
-</form>
-</section>
+<%--    < class="container-fluid footer_section ">--%>
+<%--    <div class="container">--%>
+<%--        <p>--%>
+<%--            &copy; <span id="displayYear"></span> All Rights Reserved By--%>
+<%--            <a href="https://html.design/">Free Html Templates</a>--%>
+<%--        </p>--%>
+<%--    </div>--%>
+<%--</form>--%>
+<%--</section>--%>
 <!-- end  footer section -->
 
 
