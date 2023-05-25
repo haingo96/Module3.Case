@@ -104,6 +104,7 @@ public class House {
 
     public void setAddress(Address address) {
         this.address = address;
+
     }
 
     public int getRenterId() {
