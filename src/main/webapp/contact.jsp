@@ -33,7 +33,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="../index.jsp">
+          <a class="navbar-brand" href="index.jsp">
             <img src="images/logo.png" alt="" />
           </a>
           <div class="navbar-collapse" id="">
@@ -65,7 +65,7 @@
             </div>
             <div id="myNav" class="overlay">
               <div class="overlay-content">
-                <a href="../index.jsp">HOME</a>
+                <a href="index.jsp">HOME</a>
                 <a href="about.jsp">ABOUT</a>
                 <a href="house.jsp">HOUSE</a>
                 <a href="price.jsp">PRICING</a>
@@ -80,41 +80,55 @@
   </div>
 
 
-  <!-- about section -->
+  <!-- contact section -->
 
-  <section class="about_section layout_padding-bottom">
-    <div class="square-box">
-      <img src="images/square.png" alt="">
-    </div>
+  <section class="contact_section layout_padding-top">
     <div class="container">
+      <div class="heading_container">
+        <h2>
+          Get In Touch
+        </h2>
+      </div>
+    </div>
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Our Apartment
-              </h2>
+        <div class="col-md-6 px-0">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
             </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in
-              some form, by injected humour, or randomised words
-            </p>
-            <a href="">
-              Read More
-            </a>
           </div>
         </div>
+        <div class="col-lg-4 col-md-5 ">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button>
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- end about section -->
+  <!-- end contact section -->
+
 
 
   <!-- info section -->
@@ -252,7 +266,6 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 
-</body>
 </body>
 
 </html>

@@ -24,14 +24,14 @@
     <title>Teaser</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="teaser-html/css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <!-- responsive style -->
-    <link href="teaser-html/css/responsive.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -41,13 +41,13 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.jsp">
-                    <img src="teaser-html/images/logo.png" alt=""/>
+                    <img src="images/logo.png" alt=""/>
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
                         <div class="User_option">
                             <li class="">
-                                <a class="mr-4" href="teaser-html/addhouseform.html">
+                                <a class="mr-4" href="addhouseform.html">
                                     Add new house
                                 </a>
 <%--                                <a class="" href="">--%>
@@ -73,10 +73,10 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
-                            <a href="teaser-html/about.jsp">ABOUT</a>
-                            <a href="teaser-html/house.jsp">HOUSE</a>
-                            <a href="teaser-html/price.jsp">PRICING</a>
-                            <a href="teaser-html/contact.jsp">CONTACT US</a>
+                            <a href="about.jsp">ABOUT</a>
+                            <a href="house.jsp">HOUSE</a>
+                            <a href="price.jsp">PRICING</a>
+                            <a href="contact.jsp">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
             <c:forEach var="house" items="${houses}">
                 <div class="box">
                     <div class="img-box">
-                        <img src="teaser-html/images/s-1.jpg" alt="">
+                        <img src="images/s-1.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h6>
@@ -143,9 +143,9 @@
 
 <!-- end sale section -->
 
-<script type="text/javascript" src="teaser-html/js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="teaser-html/js/bootstrap.js"></script>
-<script type="text/javascript" src="teaser-html/js/custom.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
 
 </body>

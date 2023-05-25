@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +19,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
@@ -25,6 +27,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
 </head>
 
 <body class="sub_page">
@@ -33,7 +37,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="../index.jsp">
+          <a class="navbar-brand" href="index.jsp">
             <img src="images/logo.png" alt="" />
           </a>
           <div class="navbar-collapse" id="">
@@ -65,7 +69,7 @@
             </div>
             <div id="myNav" class="overlay">
               <div class="overlay-content">
-                <a href="../index.jsp">HOME</a>
+                <a href="index.jsp">HOME</a>
                 <a href="about.jsp">ABOUT</a>
                 <a href="house.jsp">HOUSE</a>
                 <a href="price.jsp">PRICING</a>
@@ -85,96 +89,35 @@
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          House For Sale
+          All House
         </h2>
         <p>
           There are many variations of passages of Lorem Ipsum available, but the
         </p>
       </div>
       <div class="sale_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-1.jpg" alt="">
+        <c:forEach var="house" items="${houses}">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s-1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
+              </h6>
+              <p>
+                Diện tích: ${house.getArea()}
+              </p>
+              <p>
+                Trạng thái:
+                <c:if test="${house.isStatus() == true}">
+                  <span> Đang có người ở</span>
+                </c:if>
+                <span>Đang trống </span>
+              </p>
+            </div>
           </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-4.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-5.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-6.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          Find More
-        </a>
+        </c:forEach>
       </div>
     </div>
   </section>

@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerService {
+public class CustomerService implements CustomerInterface {
     private String jdbcURL = "jdbc:mysql://localhost:3306/houserentingdb";
     private String jdbcUsername = "root";
     private String jdbcPassword = "C0223g1";
@@ -32,19 +32,17 @@ public class CustomerService {
         return connection;
     }
 
-    public List<House> selectAllUsers() {
+    public List<House> displayRating() {
 
         // using try-with-resources to avoid closing resources (boiler plate code)
         List<House> houses = new ArrayList<>();
         // Step 1: Establishing a Connection
         try (Connection connection = getConnection();
-
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FIVE_HOUSE);) {
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
             ResultSet rs = preparedStatement.executeQuery();
-
             // Step 4: Process the ResultSet object.
             while (rs.next()) {
                 int houseId = rs.getInt("houseId");

@@ -46,4 +46,13 @@ public class Address {
     public void setWard(String ward) {
         this.ward = ward;
     }
+
+    @Override
+    public String toString() {
+        return
+                "Province:" + province + '\'' +
+                "District:" + district + '\'' +
+                "Ward:" + ward
+                ;
+    }
 }

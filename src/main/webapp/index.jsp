@@ -16,14 +16,14 @@
     <title>Teaser</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="teaser-html/css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <!-- responsive style -->
-    <link href="teaser-html/css/responsive.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.jsp">
-                    <img src="teaser-html/images/logo.png" alt=""/>
+                    <img src="images/logo.png" alt=""/>
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -42,9 +42,9 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-<%--                                <a class="" href="">--%>
-<%--                                    Sign up--%>
-<%--                                </a>--%>
+                                <%--                                <a class="" href="">--%>
+                                <%--                                    Sign up--%>
+                                <%--                                </a>--%>
                             </li>
                         </div>
                     </ul>
@@ -65,10 +65,10 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
-                            <a href="teaser-html/about.jsp">ABOUT</a>
-                            <a href="teaser-html/house.jsp">HOUSE</a>
-                            <a href="teaser-html/price.jsp">PRICING</a>
-                            <a href="teaser-html/contact.jsp">CONTACT US</a>
+                            <a href="about.jsp">ABOUT</a>
+                            <a href="house.jsp">HOUSE</a>
+                            <a href="price.jsp">PRICING</a>
+                            <a href="contact.jsp">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -132,13 +132,13 @@
 
 <section class="about_section layout_padding-bottom">
     <div class="square-box">
-        <img src="teaser-html/images/square.png" alt="">
+        <img src="images/square.png" alt="">
     </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="img-box">
-                    <img src="teaser-html/images/about-img.jpg" alt="">
+                    <img src="images/about-img.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-6">
@@ -180,7 +180,7 @@
         <div class="sale_container">
             <div class="box">
                 <div class="img-box">
-                    <img src="teaser-html/images/s-1.jpg" alt="">
+                    <img src="images/s-1.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -193,7 +193,7 @@
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="teaser-html/images/s-2.jpg" alt="">
+                    <img src="images/s-2.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -206,7 +206,7 @@
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="teaser-html/images/s-3.jpg" alt="">
+                    <img src="images/s-3.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -219,7 +219,7 @@
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="teaser-html/images/s-4.jpg" alt="">
+                    <img src="images/s-4.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -232,7 +232,7 @@
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="teaser-html/images/s-5.jpg" alt="">
+                    <img src="images/s-5.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -245,7 +245,7 @@
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="teaser-html/images/s-6.jpg" alt="">
+                    <img src="images/s-6.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -437,10 +437,10 @@
             <div class="col-md-6">
                 <div class="img-box">
                     <div class="box b1">
-                        <img src="teaser-html/images/d-1.jpg" alt="">
+                        <img src="images/d-1.jpg" alt="">
                     </div>
                     <div class="box b1">
-                        <img src="teaser-html/images/d-2.jpg" alt="">
+                        <img src="images/d-2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -464,7 +464,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="box">
                     <div class="img-box">
-                        <img src="teaser-html/images/u-1.png" alt="">
+                        <img src="images/u-1.png" alt="">
                     </div>
                     <div class="detail-box">
                         <h3 class="price">
@@ -479,7 +479,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="box">
                     <div class="img-box">
-                        <img src="teaser-html/images/u-2.png" alt="">
+                        <img src="images/u-2.png" alt="">
                     </div>
                     <div class="detail-box">
                         <h3>
@@ -494,7 +494,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="box">
                     <div class="img-box">
-                        <img src="teaser-html/images/u-3.png" alt="">
+                        <img src="images/u-3.png" alt="">
                     </div>
                     <div class="detail-box">
                         <h3>
@@ -509,7 +509,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="box">
                     <div class="img-box">
-                        <img src="teaser-html/images/u-4.png" alt="">
+                        <img src="images/u-4.png" alt="">
                     </div>
                     <div class="detail-box">
                         <h3>
@@ -547,7 +547,7 @@
                     <div class="carousel-item active">
                         <div class="box">
                             <div class="img-box">
-                                <img src="teaser-html/images/client.jpg" alt="">
+                                <img src="images/client.jpg" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -567,7 +567,7 @@
                     <div class="carousel-item">
                         <div class="box">
                             <div class="img-box">
-                                <img src="teaser-html/images/client.jpg" alt="">
+                                <img src="images/client.jpg" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -587,7 +587,7 @@
                     <div class="carousel-item">
                         <div class="box">
                             <div class="img-box">
-                                <img src="teaser-html/images/client.jpg" alt="">
+                                <img src="images/client.jpg" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -682,7 +682,7 @@
                     </h5>
                     <div>
                         <div class="img-box">
-                            <img src="teaser-html/images/location.png" width="18px" alt="">
+                            <img src="images/location.png" width="18px" alt="">
                         </div>
                         <p>
                             Address
@@ -690,7 +690,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="teaser-html/images/phone.png" width="12px" alt="">
+                            <img src="images/phone.png" width="12px" alt="">
                         </div>
                         <p>
                             +01 1234567890
@@ -698,7 +698,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="teaser-html/images/mail.png" width="18px" alt="">
+                            <img src="images/mail.png" width="18px" alt="">
                         </div>
                         <p>
                             demo@gmail.com
@@ -769,16 +769,16 @@
                     </form>
                     <div class="social_box">
                         <a href="">
-                            <img src="teaser-html/images/fb.png" alt="">
+                            <img src="images/fb.png" alt="">
                         </a>
                         <a href="">
-                            <img src="teaser-html/images/twitter.png" alt="">
+                            <img src="images/twitter.png" alt="">
                         </a>
                         <a href="">
-                            <img src="teaser-html/images/linkedin.png" alt="">
+                            <img src="images/linkedin.png" alt="">
                         </a>
                         <a href="">
-                            <img src="teaser-html/images/youtube.png" alt="">
+                            <img src="images/youtube.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -802,9 +802,9 @@
 <!-- end  footer section -->
 
 
-<script type="text/javascript" src="teaser-html/js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="teaser-html/js/bootstrap.js"></script>
-<script type="text/javascript" src="teaser-html/js/custom.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
 
 </body>

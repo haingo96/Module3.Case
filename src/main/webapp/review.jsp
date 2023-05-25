@@ -1,37 +1,34 @@
-<!--<%&#45;&#45;-->
-<!--  Created by IntelliJ IDEA.-->
-<!--  User: ngoho-->
-<!--  Date: 5/24/2023-->
-<!--  Time: 5:10 PM-->
-<!--  To change this template use File | Settings | File Templates.-->
-<!--&#45;&#45;%>-->
-<!--<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>-->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 
 <head>
     <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Teaser</title>
 
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css"/>
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet"/>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
 </head>
 
 <body class="sub_page">
@@ -41,7 +38,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="../index.jsp">
-                    <img src="images/logo.png" alt="" />
+                    <img src="images/logo.png" alt=""/>
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -72,7 +69,7 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../index.jsp">HOME</a>
+                            <a href="index.jsp">HOME</a>
                             <a href="about.jsp">ABOUT</a>
                             <a href="house.jsp">HOUSE</a>
                             <a href="price.jsp">PRICING</a>
@@ -86,56 +83,51 @@
     <!-- end header section -->
 </div>
 
+<!-- sale section -->
 
-<!-- contact section -->
-
-<section class="contact_section layout_padding-top">
-    <div class="container">
+<section class="sale_section layout_padding">
+    <div class="container-fluid">
         <div class="heading_container">
             <h2>
-                Get In Touch
+                All House
             </h2>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the
+            </p>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 px-0">
-                <div class="map_container">
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+        <div class="sale_container">
+            <div class="box">
+                <div class="img-box">
+                    <img src="images/s-1.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                    <h6>
+                        apertments house
+                    </h6>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but
+                    </p>
+                    <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star"/>
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star"/>
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <label class="star star-1" for="star-1"></label>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-5 ">
-                <div class="form_container">
-                    <form action="">
-                        <div>
-                            <input type="text" placeholder="Name" />
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Email" />
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Phone Number" />
-                        </div>
-                        <div>
-                            <input type="text" class="message-box" placeholder="Message" />
-                        </div>
-                        <div class="d-flex ">
-                            <button>
-                                Send
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
-<!-- end contact section -->
-
+<!-- end sale section -->
 
 
 <!-- info section -->
@@ -273,6 +265,7 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 
+</body>
 </body>
 
 </html>
