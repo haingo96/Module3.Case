@@ -94,30 +94,41 @@
             <p>
                 There are many variations of passages of Lorem Ipsum available, but the
             </p>
+            <c:if test="${house != null}">
+                <input type="hidden" name="house_id" value="<c:out value='${house.getHouseId()}' />"/>
+            </c:if>
+            <div class="detail-box">
+                <h6>
+                    Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
+                </h6>
+                <p>
+                    Diện tích: ${house.getArea()}
+                </p>
+                <p>
+                    Trạng thái:
+                    <c:if test="${house.isStatus() == true}">
+                        <span> Đang có người ở</span>
+                    </c:if>
+                    <span>Đang trống </span>
+                </p>
+                <div class="stars">
+                    <form action="">
+                        <input class="star star-5" id="star-5" type="radio" name="star"/>
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star"/>
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star"/>
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star"/>
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star"/>
+                        <label class="star star-1" for="star-1"></label>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="sale_container">
-            <c:forEach var="house" items="${houses}">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="images/s-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
-                        </h6>
-                        <p>
-                            Diện tích: ${house.getArea()}
-                        </p>
-                        <p>
-                            Trạng thái:
-                            <c:if test="${house.isStatus() == true}">
-                                <span> Đang có người ở</span>
-                            </c:if>
-                            <span>Đang trống </span>
-                        </p>
-                    </div>
-                </div>
-            </c:forEach>
+
         </div>
     </div>
 </section>

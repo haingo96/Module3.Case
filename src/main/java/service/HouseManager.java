@@ -14,6 +14,8 @@ public class HouseManager {
     private static final String SQL_PASSWORD = "C0223g1@";
 
     private static final String SQL_SELECT_ALL_HOUSE = "SELECT * FROM House;";
+    private static final String SELECT_FIVE_HOUSE = "select * from House join Review on House.house_id = Review.house_id order by rating desc limit 5";
+
 
     public static Connection getConnection() {
         Connection connection;
@@ -61,5 +63,44 @@ public class HouseManager {
         }
 
         return houses;
+    }
+
+    public static House display(int id) {
+        House house = null;
+
+        // using try-with-resources to avoid closing resources (boiler plate code)
+        // Step 1: Establishing a Connection
+        try (Connection connection = getConnection();
+                // Step 2:Create a statement using connection object
+                PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FIVE_HOUSE);) {
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+                int houseId = rs.getInt("house_id");
+                Double price = rs.getDouble("price");
+                LocalDate viewDate = rs.getDate("view_date").toLocalDate();
+                LocalDate unavailableUntil = rs.getDate("unavailable_until").toLocalDate();
+                String area = rs.getString("area");
+                String type = rs.getString("type");
+                Boolean status = rs.getBoolean("status");
+                int addressId = rs.getInt("address_id");
+                Address address = AddressManager.getAddressById(addressId);
+                int renterId = rs.getInt("renter_id");
+                int ownerId = rs.getInt("owner_id");
+                String description = rs.getString("discription");
+                house = new House(houseId, price, viewDate, unavailableUntil,area,type,status,address,renterId,ownerId,description);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return house;
+    }
+
+    public static void main(String[] args) {
+        HouseManager houseManager = new HouseManager();
+        House house = houseManager.display(3);
+        System.out.println(house);
     }
 }

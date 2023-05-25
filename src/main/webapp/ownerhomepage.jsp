@@ -115,10 +115,12 @@
             </p>
         </div>
         <div class="sale_container">
-            <c:forEach var="house" items="${houses}">
+            <c:forEach var="house" items="${requestScope['houses']}" >
                 <div class="box">
                     <div class="img-box">
+                        <a href="/owner-servlet?action=displayRating&house_id=${house.getHouseId()}">
                         <img src="images/s-1.jpg" alt="">
+                        </a>
                     </div>
                     <div class="detail-box">
                         <h6>

@@ -1,10 +1,10 @@
 package controller;
 
 import model.House;
-import service.CustomerInterface;
 import service.HouseManager;
 
 import java.io.*;
+import java.sql.SQLException;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,7 +14,6 @@ import javax.servlet.annotation.*;
 public class OwnerServlet extends HttpServlet {
     public void init() {
     }
-    private CustomerInterface customerInterface;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String action = request.getParameter("action");
@@ -24,24 +23,29 @@ public class OwnerServlet extends HttpServlet {
 
         switch (action) {
             case "displayRating":
-                displayRating(request,response);
+                try {
+                    displayRating(request,response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                } catch (ServletException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
             default:
                 displayAllHouse(request, response);
                 break;
         }
     }
 
-    private void displayRating(HttpServletRequest request, HttpServletResponse response) {
-        List<House> houses = customerInterface.displayRating();
-        request.setAttribute("houses",houses);
+    private void displayRating(HttpServletRequest request, HttpServletResponse response)
+            throws SQLException, ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("house_id"));
+        House houses = HouseManager.display(id);
+        request.setAttribute("house",houses);
         RequestDispatcher dispatcher = request.getRequestDispatcher("review.jsp");
-        try {
+        request.setAttribute("user", houses);
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+
     }
 
     private void displayAllHouse(HttpServletRequest request, HttpServletResponse response) {
@@ -51,13 +55,9 @@ public class OwnerServlet extends HttpServlet {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("ownerhomepage.jsp");
         try {
             requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (IOException | ServletException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public void destroy() {
-    }
 }
