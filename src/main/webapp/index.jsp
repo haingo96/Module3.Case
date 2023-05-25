@@ -15,6 +15,7 @@
 
     <title>Teaser</title>
 
+
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css"/>
 
@@ -66,7 +67,7 @@
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
                             <a href="teaser-html/about.jsp">ABOUT</a>
-                            <a href="teaser-html/house.jsp">HOUSE</a>
+                            <a href="house.jsp">HOUSE</a>
                             <a href="teaser-html/price.jsp">PRICING</a>
                             <a href="teaser-html/contact.jsp">CONTACT US</a>
                         </div>
@@ -104,16 +105,17 @@
 </div>
 
 <!-- find section -->
+
 <section class="find_section ">
     <div class="container">
         <form action="">
             <div class=" form-row">
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Search Your Address">
+                    <input type="text" name="form-control" class="form-control" placeholder="Search Your Address">
                     <input type="hidden" name="action" value="search">
                 </div>
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Unavaliable Until">
+                    <input type="text" name="form-control1" class="form-control" placeholder="Unavaliable Until">
                     <input type="hidden" name="action" value="search">
                 </div>
                 <div class="col-md-2">
@@ -122,7 +124,6 @@
                     </button>
                 </div>
             </div>
-
         </form>
     </div>
 </section>
