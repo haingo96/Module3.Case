@@ -54,12 +54,12 @@ public class CustomerService {
                 String area = rs.getString("area");
                 String type = rs.getString("type");
                 Boolean status = rs.getBoolean("status");
-//                int addressId = rs.getInt("address_id");
-//                Address address = AddressManager.getAddress(addressId);
+                int addressId = rs.getInt("address_id");
+                Address address = AddressManager.getAddressById(addressId);
                 int renterId = rs.getInt("renterId");
                 int ownerId = rs.getInt("ownerId");
                 String description = rs.getString("description");
-//                houses.add(new House(houseId, price, viewDate, unavailableUntil,area,type,status,address,renterId,ownerId,description));
+                houses.add(new House(houseId, price, viewDate, unavailableUntil,area,type,status,address,renterId,ownerId,description));
             }
         } catch (SQLException e) {
             printSQLException(e);
