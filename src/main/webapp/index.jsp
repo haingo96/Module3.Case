@@ -42,9 +42,9 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-                                <a class="" href="">
-                                    Sign up
-                                </a>
+<%--                                <a class="" href="">--%>
+<%--                                    Sign up--%>
+<%--                                </a>--%>
                             </li>
                         </div>
                     </ul>
