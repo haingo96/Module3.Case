@@ -74,7 +74,7 @@
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
                             <a href="about.jsp">ABOUT</a>
-                            <a href="house.jsp">HOUSE</a>
+                            <a href="owner-servlet">HOUSE</a>
                             <a href="price.jsp">PRICING</a>
                             <a href="contact.jsp">CONTACT US</a>
                         </div>

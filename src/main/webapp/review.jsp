@@ -1,32 +1,32 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 
 <head>
     <!-- Basic -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>Teaser</title>
 
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css" />
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet" />
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
 
 </head>
@@ -37,8 +37,8 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="images/logo.png" alt=""/>
+                <a class="navbar-brand" href="index.jsp">
+                    <img src="images/logo.png" alt="" />
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -71,7 +71,7 @@
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
                             <a href="about.jsp">ABOUT</a>
-                            <a href="house.jsp">HOUSE</a>
+                            <a href="owner-servlet">HOUSE</a>
                             <a href="price.jsp">PRICING</a>
                             <a href="contact.jsp">CONTACT US</a>
                         </div>
@@ -96,38 +96,34 @@
             </p>
         </div>
         <div class="sale_container">
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/s-1.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h6>
-                        apertments house
-                    </h6>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but
-                    </p>
-                    <div class="stars">
-                        <form action="">
-                            <input class="star star-5" id="star-5" type="radio" name="star"/>
-                            <label class="star star-5" for="star-5"></label>
-                            <input class="star star-4" id="star-4" type="radio" name="star"/>
-                            <label class="star star-4" for="star-4"></label>
-                            <input class="star star-3" id="star-3" type="radio" name="star"/>
-                            <label class="star star-3" for="star-3"></label>
-                            <input class="star star-2" id="star-2" type="radio" name="star"/>
-                            <label class="star star-2" for="star-2"></label>
-                            <input class="star star-1" id="star-1" type="radio" name="star"/>
-                            <label class="star star-1" for="star-1"></label>
-                        </form>
+            <c:forEach var="house" items="${houses}">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/s-1.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
+                        </h6>
+                        <p>
+                            Diện tích: ${house.getArea()}
+                        </p>
+                        <p>
+                            Trạng thái:
+                            <c:if test="${house.isStatus() == true}">
+                                <span> Đang có người ở</span>
+                            </c:if>
+                            <span>Đang trống </span>
+                        </p>
                     </div>
                 </div>
-            </div>
+            </c:forEach>
         </div>
     </div>
 </section>
 
 <!-- end sale section -->
+
 
 
 <!-- info section -->
