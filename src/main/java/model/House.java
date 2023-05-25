@@ -10,7 +10,7 @@ public class House {
     private String area;
     private String type;
     private boolean status;
-    private int addressId;
+    private Address address;
     private int renterId;
     private int ownerId;
     private String description;
@@ -18,7 +18,7 @@ public class House {
     public House() {
     }
 
-    public House(int houseId, double price, LocalDate viewDate, LocalDate unavailableUntil, String area, String type, boolean status, int addressId, int renterId, int ownerId, String description) {
+    public House(int houseId, double price, LocalDate viewDate, LocalDate unavailableUntil, String area, String type, boolean status, Address address, int renterId, int ownerId, String description) {
         this.houseId = houseId;
         this.price = price;
         this.viewDate = viewDate;
@@ -26,7 +26,7 @@ public class House {
         this.area = area;
         this.type = type;
         this.status = status;
-        this.addressId = addressId;
+        this.address = address;
         this.renterId = renterId;
         this.ownerId = ownerId;
         this.description = description;
@@ -88,12 +88,12 @@ public class House {
         this.status = status;
     }
 
-    public int getAddressId() {
-        return addressId;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAddressId(int addressId) {
-        this.addressId = addressId;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public int getRenterId() {

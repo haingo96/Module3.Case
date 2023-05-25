@@ -13,6 +13,12 @@ public class Address {
         return addressId;
     }
 
+    public Address(String province, String district, String ward) {
+        this.province = province;
+        this.district = district;
+        this.ward = ward;
+    }
+
     public void setAddressId(int addressId) {
         this.addressId = addressId;
     }
