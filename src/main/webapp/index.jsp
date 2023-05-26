@@ -27,13 +27,12 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-=======
+
 
 <%--<% response.sendRedirect("/owner-servlet");%>--%>
 <%--TODO: tạm thời send redirect sang ownerhp, nhớ xóa--%>
 
->>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
+
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -49,15 +48,14 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-<<<<<<< HEAD
+
                                 <a class="" href="">
                                     Sign up
                                 </a>
-=======
+
 <%--                                <a class="" href="">--%>
 <%--                                    Sign up--%>
 <%--                                </a>--%>
->>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
                             </li>
                         </div>
                     </ul>
@@ -123,11 +121,6 @@
             <div class=" form-row">
                 <div class="col-md-5">
                     <input type="text" class="form-control" placeholder="Serach Your Categories ">
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Location ">
-                </div>
-                <div class="col-md-2">
                     <button type="submit" class="">
                         search
                     </button>

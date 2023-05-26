@@ -13,6 +13,8 @@ public class User {
 
     public User(String user_name, String password, String email, String name, int age, String phone_number, String identity_number, int role) {
     }
+    public User(int id,String user_name, String password, String email, String name, int age, String phone_number, String identity_number, int role) {
+    }
 
     public User(int id, int role, String user_name, String password) {
         this.id = id;

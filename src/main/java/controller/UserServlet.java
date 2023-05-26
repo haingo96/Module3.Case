@@ -110,11 +110,14 @@ public class UserServlet extends HttpServlet {
         }
         switch (action) {
             case "create":
-                createUser(request,response);
+                createUser(request, response);
                 break;
             case "edit_Customer_information":
+                updateUser(request, response);
                 break;
             case "login":
+                loginCustomer_Information(request, response);
+                break;
         }
     }
 
@@ -139,5 +142,48 @@ public class UserServlet extends HttpServlet {
         }
     }
 
+    private void updateUser(HttpServletRequest request, HttpServletResponse response) {
+        int id = (int) request.getSession().getAttribute("id");
+        String user_name = request.getParameter("user_name");
+        String password = request.getParameter("password");
+        String email = request.getParameter("email");
+        String name = request.getParameter("name");
+        int age = Integer.parseInt(request.getParameter("age"));
+        String phone_number = request.getParameter("phone_number");
+        String identity_number = request.getParameter("identity_number");
+        int role = Integer.parseInt(request.getParameter("role"));
+        User newUser = new User(id, user_name, password, email, name, age, phone_number, identity_number, role);
+        userServiceImpl.update(newUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("user/sign_up.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
+    private void loginCustomer_Information(HttpServletRequest request, HttpServletResponse response) {
+        String user_name = request.getParameter("user_name");
+        String password = request.getParameter("password");
+        User user = userServiceImpl.login(user_name, password);
+        HttpSession session = request.getSession();
+        session.setAttribute("user_name", user_name);
+        if (user == null) {
+            try {
+                response.sendRedirect("user?action=login");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            try {
+                response.sendRedirect("user");
+                session.setAttribute("id", user.getId());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }
+
