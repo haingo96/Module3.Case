@@ -27,6 +27,10 @@
 </head>
 
 <body>
+
+<%--<% response.sendRedirect("/owner-servlet");%>--%>
+<%--TODO: tạm thời send redirect sang ownerhp, nhớ xóa--%>
+
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -65,10 +69,10 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
-                            <a href="about.jsp">ABOUT</a>
-                            <a href="owner-servlet">HOUSE</a>
-                            <a href="price.jsp">PRICING</a>
-                            <a href="contact.jsp">CONTACT US</a>
+                            <a href="teaser-html/about.jsp">ABOUT</a>
+                            <a href="customer_servlet">HOUSE</a>
+                            <a href="teaser-html/price.jsp">PRICING</a>
+                            <a href="teaser-html/contact.jsp">CONTACT US</a>
                         </div>
                     </div>
                 </div>

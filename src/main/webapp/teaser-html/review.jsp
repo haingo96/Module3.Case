@@ -37,7 +37,7 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="index.jsp">
+                <a class="navbar-brand" href="../index.jsp">
                     <img src="images/logo.png" alt="" />
                 </a>
                 <div class="navbar-collapse" id="">
@@ -69,9 +69,9 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="index.jsp">HOME</a>
+                            <a href="../index.jsp">HOME</a>
                             <a href="about.jsp">ABOUT</a>
-                            <a href="owner-servlet">HOUSE</a>
+                            <a href="customer_servlet">HOUSE</a>
                             <a href="price.jsp">PRICING</a>
                             <a href="contact.jsp">CONTACT US</a>
                         </div>
