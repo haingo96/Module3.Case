@@ -45,11 +45,7 @@
                                     Thêm nhà
                                 </a>
                                 <a class="" href="index.jsp">
-<<<<<<< HEAD
                                 Đăng xuất
-=======
-                                    Đăng xuất
->>>>>>> f20733f4f2e654c0e323b98778d43bddeefe0df1
                                 </a>
                             </li>
                         </div>
