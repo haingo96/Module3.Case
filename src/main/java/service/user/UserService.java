@@ -1,6 +1,7 @@
 package service.user;
 
 
+import model.User;
 import service.Connect;
 
 import java.sql.Connection;
@@ -13,11 +14,14 @@ public interface UserService<E>{
     Connect connect = new Connect(jdbcURL,jdbcUsername,jdbcPassword);
     Collection<E> showAll();
 
-    void create(E object);
+    void create(User user);
 
     E showByIndex(int index);
 
     void update(E object);
 
     void delete(int index);
+    User login(String user_name, String password);
+    User Sign_up(String user_name, String password, int role);
+
 }

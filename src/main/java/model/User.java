@@ -1,7 +1,5 @@
 package model;
 
-import java.time.LocalDate;
-
 public class User {
     private int id;
     private String name;
@@ -13,7 +11,7 @@ public class User {
     private String user_name;
     private String password;
 
-    public User() {
+    public User(String user_name, String password, String email, String name, int age, String phone_number, String identity_number, int role) {
     }
 
     public User(int id, int role, String user_name, String password) {
