@@ -19,7 +19,7 @@ public class CustomerService {
     private static final String SELECT_HOUSE_BY_STATUS = "select * from House where status = ? and unavailable_until = ? ";
     private static final String SELECT_HOUSE_BY_TEST = " SELECT house.house_id, house.price,house.view_date,house.unavailable_until, house.area, house.type, house.status,house.address_id,house.renter_id,house.owner_id,house.discription, address.province, address.district, address.ward FROM house JOIN address ON address.address_id = house.address_id WHERE address.province = ? ";
     //    private static final String SELECT_HOUSE_BY_ID = "select * from House where unavailable_until = ? ";
-//    private static final String SELECT_HOUSE_BY_DATE = "select * from House where house_id = ? ";
+    private static final String SELECT_HOUSE_BY_VIEW = "select * from House where house_id = ? ";
 //
 //    private static final String SELECT_HOUSE_ADDRESS = "select house_id ,price,unavailable_until,area,type,status, address.province , address.district , address.ward from house \n" +
 //            "join address on address.address_id = house.address_id;";
@@ -131,12 +131,12 @@ public class CustomerService {
         return houseList1;
     }
 
-    public List<House> findIndex(int address) {
-        List<House> houseList = new ArrayList<>();
+    public House findIndex(int house) {
+       House house1 = null;
         try (Connection connection = getConnection();
 
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_HOUSE_BY_STATUS)) {
-            preparedStatement.setInt(1, address);
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_HOUSE_BY_VIEW)) {
+            preparedStatement.setInt(1, house);
             System.out.println(preparedStatement);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -154,12 +154,12 @@ public class CustomerService {
                 int renterId = resultSet.getInt("renter_id");
                 int owner = resultSet.getInt("owner_id");
                 String discription = resultSet.getString("discription");
-                houseList.add(new House(houseId, price, viewDate, unavailableUntil, area, type, status, address1, renterId, owner, discription));
+                house1 = new House(houseId, price, viewDate, unavailableUntil, area, type, status, address1, renterId, owner, discription);
             }
         } catch (SQLException e) {
             printSQLException(e);
         }
-        return houseList;
+        return house1;
     }
 
     public List<House> selectAllUsers() {

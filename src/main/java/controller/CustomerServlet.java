@@ -13,9 +13,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "OwenrServlet", value = "/Owenr")
+@WebServlet(name = "CustomerServlet", value = "/Customer")
 
-public class OwenrServlet extends HttpServlet {
+public class CustomerServlet extends HttpServlet{
 
     private static final long serialVersionUID = 1L;
     private CustomerService customerList;
@@ -35,10 +35,11 @@ public class OwenrServlet extends HttpServlet {
                 case "search":
                     searchFromHouse(request, response);
                     break;
-                case "view":
-                    viewCustomer(request,response);
                 case "searchDate":
                     searchFromDate(request,response);
+                    break;
+                case "view":
+                    viewCustomer(request,response);
                     break;
                 default:
                     listCustomer(request, response);
@@ -58,9 +59,6 @@ public class OwenrServlet extends HttpServlet {
         try {
             switch (action) {
                 case "search":
-                    break;
-                case "view":
-                    viewCustomer(request,response);
                     break;
                 case "searchDate":
                     searchFromDate(request,response);
@@ -135,22 +133,14 @@ public class OwenrServlet extends HttpServlet {
 
 
 
-    private void viewCustomer(HttpServletRequest request, HttpServletResponse response) {
-        int house_id = Integer.parseInt(request.getParameter("form-control"));
-        List<House> house = customerList.findIndex(house_id);
+    private void viewCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int house_id = Integer.parseInt(request.getParameter("house_id"));
+        House house = customerList.findIndex(house_id);
         RequestDispatcher dispatcher;
-        if (house == null) {
-            dispatcher = request.getRequestDispatcher("error.jsp");
-        } else {
             request.setAttribute("house", house);
             dispatcher = request.getRequestDispatcher("about.jsp");
-        }
-
-        try {
             dispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
-            e.printStackTrace();
-        }
+//        response.sendRedirect("about.jsp");
     }
 
 }

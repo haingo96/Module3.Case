@@ -29,7 +29,7 @@
 </head>
 
 <body class="sub_page">
-<form action="/Owenr">
+<form action="/Customer">
     <div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
@@ -104,13 +104,12 @@
                 <div class="box">
                     <c:forEach var="house" items="${house}">
                     <div class="img-box">
-                        <a href="/Owenr?action=view&houseId=${house.getHouseId()}"><img src="teaser-html/images/s-1.jpg" alt=""></a>
+                        <a href="/Customer?action=view&house_id=${house.getHouseId()}"><img src="teaser-html/images/s-1.jpg" alt=""></a>
                     </div>
                     <div class="detail-box">
                         <h6>
                             apertments house
                         </h6>
-
                         <p>
                            ${house.getHouseId()}
                             ${house.getPrice()}
@@ -201,7 +200,7 @@
 <%--                </div>--%>
 <%--            </div>--%>
             <div class="btn-box">
-                <a href="/Owenr">
+                <a href="/Owner">
                     <h1>BACK HOME</h1>
                 </a>
             </div>
@@ -209,8 +208,6 @@
     </section>
 
 <%--    <!-- end sale section -->--%>
-
-
 <%--    <!-- info section -->--%>
     <section class="info_section ">
         <div class="container">

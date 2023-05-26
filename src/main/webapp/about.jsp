@@ -83,7 +83,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding-bottom">
+  <section class="about_section layout_padding-bottom" >
     <div class="square-box">
       <img src="teaser-html/images/square.png" alt="">
     </div>
@@ -95,35 +95,35 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
+          <div class="detail-box" >
             <div class="heading_container">
               <h2>
                 About Our Apartment
               </h2>
-              <c:forEach var="house" items="${house}">
+
             </div>
-            <p>
-              ${house.getHouseId()}
-              ${house.getPrice()}
-              ${house.getViewDate()}
-              ${house.getUnavailableUntil()}
-              ${house.getArea()}
-              ${house.getType()}
-              ${house.isStatus()}
-              ${house.getAddress()}
-              ${house.getRenterId()}
-              ${house.ownerId}
-              ${house.getDescription()}
+            <p >
+              ${requestScope["house"].getHouseId()}
+              ${requestScope["house"].getPrice()}
+              ${requestScope["house"].getViewDate()}
+              ${requestScope["house"].getUnavailableUntil()}
+              ${requestScope["house"].getArea()}
+              ${requestScope["house"].getType()}
+              ${requestScope["house"].isStatus()}
+              ${requestScope["house"].getAddress()}
+              ${requestScope["house"].getRenterId()}
+              ${requestScope["house"].getOwnerId()}
+              ${requestScope["house"].getDescription()}
             </p>
-            <a href="">
-              Read More
+            <a href="/Customer">
+              Back Home
             </a>
           </div>
-          </c:forEach>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- end about section -->
 
