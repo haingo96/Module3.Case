@@ -90,48 +90,40 @@
         <button type="submit" class=""><b>search</b></button>
     </form>
 
-    <section class="sale_section layout_padding">
-        <div class="container-fluid">
-            <div class="heading_container">
                 <h2>
                     House For Sale
                 </h2>
 
-
-
-            </div>
-            <div class="sale_container">
-                <div class="box">
                     <c:forEach var="house" items="${house}">
-                    <div class="img-box">
-                        <a href="/Customer?action=view&house_id=${house.getHouseId()}"><img src="teaser-html/images/s-1.jpg" alt=""></a>
-                    </div>
+
+                        <a href="/Customer?action=view&house_id=${house.getHouseId()}"><img src="teaser-html/images/s-5.jpg" alt=""></a>
+
                     <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
+                        <h2>
+                            <b>
+                            Apertments house
+                            </b>
+                        </h2>
                         <p>
-                           ${house.getHouseId()}
-                            ${house.getPrice()}
-                            ${house.getViewDate()}
-                            ${house.getUnavailableUntil()}
-                            ${house.getArea()}
-                            ${house.getType()}
-                            ${house.isStatus()}
-                            ${house.getAddress()}
-                            ${house.getRenterId()}
-                            ${house.ownerId}
-                            ${house.getDescription()}
+                        <p>Số Nhà :  ${house.getHouseId()}</p>
+                        <p>Giá Thuê : ${house.getPrice()}</p>
+<%--                        <p>Ngày Xem Nhà : ${house.getViewDate()}</p>--%>
+                        <p>Thời Hạn ${house.getUnavailableUntil()}</p>
+                        <p>Diện Tính : ${house.getArea()}</p>
+                        <p>Loại : ${house.getType()}</p>
+                        <p>Tình Trạng : <c:if test="${house.isStatus() == true }">
+                            <span>Đang Có Thuê</span> </c:if>
+                            <c:if test="${house.isStatus() == false }"><span>Đang Trống</span></c:if></p>
+                        <p>Địa Chỉ :${house.getAddress()} </p>
+<%--                            ${house.getRenterId()}--%>
+<%--                            ${house.ownerId}--%>
+<%--                            ${house.getDescription()}--%>
 
                         </p>
-
                     </div>
                     </c:forEach>
-                </div>
 
-            </div>
-        </div>
-    </section>
+
 
 <%--                <div class="box">--%>
 <%--                    <div class="img-box">--%>
@@ -200,7 +192,7 @@
 <%--                </div>--%>
 <%--            </div>--%>
             <div class="btn-box">
-                <a href="/Owner">
+                <a href="/Customer">
                     <h1>BACK HOME</h1>
                 </a>
             </div>

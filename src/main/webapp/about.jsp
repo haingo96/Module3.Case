@@ -19,6 +19,8 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css" />
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+  <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap-rating.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
@@ -103,19 +105,32 @@
 
             </div>
             <p >
-              ${requestScope["house"].getHouseId()}
-              ${requestScope["house"].getPrice()}
-              ${requestScope["house"].getViewDate()}
-              ${requestScope["house"].getUnavailableUntil()}
-              ${requestScope["house"].getArea()}
-              ${requestScope["house"].getType()}
-              ${requestScope["house"].isStatus()}
-              ${requestScope["house"].getAddress()}
-              ${requestScope["house"].getRenterId()}
-              ${requestScope["house"].getOwnerId()}
-              ${requestScope["house"].getDescription()}
+            <p>Số Nhà :  ${requestScope["house"].getHouseId()}</p>
+            <p>Giá Thuê : ${requestScope["house"].getPrice()}</p>
+            <%--                        <p>Ngày Xem Nhà : ${house.getViewDate()}</p>--%>
+            <p>Thời Hạn : ${requestScope["house"].getUnavailableUntil()}</p>
+            <p>Diện Tính : ${requestScope["house"].getArea()}</p>
+            <p>Loại : ${requestScope["house"].getType()}</p>
+            <p>Tình Trạng : <c:if test="${requestScope['house'].isStatus() == true }">
+<span>Đang Có Thuê</span> </c:if>
+              <c:if test="${house.isStatus() == false }"><span>Đang Trống</span></c:if></p>
+            <p>Địa Chỉ :${requestScope["house"].getAddress()} </p>
             </p>
-            <a href="/Customer">
+            <div class="stars">
+              <form action="">
+                <input class="star star-5" id="star-5" type="radio" name="star"/>
+                <label class="star star-5" for="star-5"></label>
+                <input class="star star-4" id="star-4" type="radio" name="star"/>
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star"/>
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star"/>
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star"/>
+                <label class="star star-1" for="star-1"></label>
+              </form>
+            </div>
+            <a href="house.jsp">
               Back Home
             </a>
           </div>
@@ -123,6 +138,7 @@
       </div>
     </div>
   </section>
+
 
 
   <!-- end about section -->

@@ -13,6 +13,11 @@ public class CustomerService {
     private String jdbcUsername = "root";
     private String jdbcPassword = "C0223g1@";
 
+
+    public CustomerService() {
+    }
+
+
     private static final String SELECT_FIVE_HOUSE = "select * from House join Review on House.house_id = Review.house_id order by rating desc limit 5";
 
     private static final String SELECT_HOUSE_ALL = "select * from House ";
@@ -25,9 +30,6 @@ public class CustomerService {
 //            "join address on address.address_id = house.address_id;";
 
 
-    public CustomerService() {
-
-    }
 
     protected Connection getConnection() {
         Connection connection = null;

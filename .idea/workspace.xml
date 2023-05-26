@@ -10,8 +10,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f3c1b8-00d4-4fa5-8270-88294343692d" name="Changes" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudy/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudy/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/about.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/contact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/price.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/price.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/review.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/review.jsp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
@@ -19,11 +50,19 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/house.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" afterDir="false" />
+>>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -103,6 +142,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QDedsusVBvcoY0Y4ZlL8hXPTzw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -112,7 +152,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "last_opened_file_path": "D:/Quan_ly_ung_dung",
+=======
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Module3.Case",
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -161,7 +206,14 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+<<<<<<< HEAD
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Customer" />
+=======
+<<<<<<< HEAD
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8888/Owenr" />
+=======
+>>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : com.example : Case-1.0-SNAPSHOT.war">
@@ -172,6 +224,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="938df6f7-a27f-48b8-ace2-62c2e55d2549" />
+        <option name="HTTP_PORT" value="8888" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -248,6 +301,24 @@
         </option>
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+=======
+>>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
     <list>
       <item itemvalue="Application.CustomerService" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.75" />

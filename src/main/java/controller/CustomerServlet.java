@@ -1,7 +1,7 @@
 package controller;
-
 import model.House;
 import service.CustomerService;
+import service.HouseManager;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -120,14 +120,11 @@ public class CustomerServlet extends HttpServlet{
         }
     }
 
-
-
-
     private void listCustomer(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         List<House> house = customerList.findAll();
         request.setAttribute("house", house);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("search_address.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -143,4 +140,17 @@ public class CustomerServlet extends HttpServlet{
 //        response.sendRedirect("about.jsp");
     }
 
+
+
+    private void displayRating(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("house_id"));
+        House houses = HouseManager.display(id);
+        request.setAttribute("house", houses);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("review.jsp");
+        request.setAttribute("user", houses);
+        dispatcher.forward(request, response);
+    }
+
 }
+
+

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-223.8836.41">
-    <data-source name="@localhost" uuid="89901bbc-c97c-4f47-8217-995a3c582e8c">
+    <data-source name="@localhost" uuid="b30348aa-0bbf-43e0-8eaa-b5ef19a7c3f3">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
-      <secret-storage>forget</secret-storage>
-      <schema-mapping />
-    </data-source>
-    <data-source name="@localhost [2]" uuid="e7a9ae5d-fe54-4cf0-af52-2dc543d7c6c8">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
-      <secret-storage>forget</secret-storage>
       <schema-mapping />
     </data-source>
   </component>
