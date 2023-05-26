@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "OwenrServlet", value = "/Owenr")
@@ -40,7 +41,7 @@ public class OwenrServlet extends HttpServlet {
                     searchFromDate(request,response);
                     break;
                 default:
-                    listUser(request, response);
+                    listCustomer(request, response);
                     break;
             }
         } catch (SQLException e) {
@@ -65,7 +66,7 @@ public class OwenrServlet extends HttpServlet {
                     searchFromDate(request,response);
                     break;
                 default:
-                    listUser(request, response);
+                    listCustomer(request, response);
                     break;
             }
         } catch (SQLException e) {
@@ -78,7 +79,7 @@ public class OwenrServlet extends HttpServlet {
         String address = request.getParameter("form-control");
         List<House> house = customerList.findIndexAddress(address);
         RequestDispatcher dispatcher;
-        if (house == null) {
+        if (house.isEmpty()) {
             dispatcher = request.getRequestDispatcher("error.jsp");
         } else {
             request.setAttribute("house", house);
@@ -95,13 +96,20 @@ public class OwenrServlet extends HttpServlet {
 
     private void searchFromDate(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
+        String date = request.getParameter("dateSearch");
+        String stt = request.getParameter("dateSearch1");
 
-        int status = Integer.parseInt(request.getParameter("dateSearch1"));
-       LocalDate  searchDate = LocalDate.parse(request.getParameter("dateSearch"));
-        List<House> house = customerList.findIndexID(status, searchDate);
+        List<House> house = null;
+        if(date.equals("") && stt.equals("")){
+            house = new ArrayList<>();
+        }else {
+            LocalDate  searchDate = LocalDate.parse(request.getParameter("dateSearch"));
+            int status = Integer.parseInt(request.getParameter("dateSearch1"));
+            house = customerList.findIndexID(status,searchDate);
+        }
         RequestDispatcher dispatcher;
-        if (house == null) {
-            dispatcher = request.getRequestDispatcher("error.jsp");
+        if (house.isEmpty()) {
+            dispatcher = request.getRequestDispatcher("house.jsp");
         } else {
             request.setAttribute("house", house);
             dispatcher = request.getRequestDispatcher("house.jsp");
@@ -117,7 +125,7 @@ public class OwenrServlet extends HttpServlet {
 
 
 
-    private void listUser(HttpServletRequest request, HttpServletResponse response)
+    private void listCustomer(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         List<House> house = customerList.findAll();
         request.setAttribute("house", house);
@@ -129,7 +137,7 @@ public class OwenrServlet extends HttpServlet {
 
     private void viewCustomer(HttpServletRequest request, HttpServletResponse response) {
         int house_id = Integer.parseInt(request.getParameter("form-control"));
-        List<House> house = customerList.findAll();
+        List<House> house = customerList.findIndex(house_id);
         RequestDispatcher dispatcher;
         if (house == null) {
             dispatcher = request.getRequestDispatcher("error.jsp");

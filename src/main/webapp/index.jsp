@@ -28,6 +28,10 @@
 </head>
 
 <body>
+
+<%--<% response.sendRedirect("/owner-servlet");%>--%>
+<%--TODO: tạm thời send redirect sang ownerhp, nhớ xóa--%>
+
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">

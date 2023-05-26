@@ -1,10 +1,3 @@
-<!--<%&#45;&#45;-->
-<!--  Created by IntelliJ IDEA.-->
-<!--  User: ngoho-->
-<!--  Date: 5/24/2023-->
-<!--  Time: 5:10 PM-->
-<!--  To change this template use File | Settings | File Templates.-->
-<!--&#45;&#45;%>-->
 <!--<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>-->
 <!DOCTYPE html>
 <html>
@@ -73,7 +66,7 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="../index.jsp">HOME</a>
-                            <a href="../about.jsp">ABOUT</a>
+                            <a href="about.jsp">ABOUT</a>
                             <a href="house.jsp">HOUSE</a>
                             <a href="price.jsp">PRICING</a>
                             <a href="contact.jsp">CONTACT US</a>
