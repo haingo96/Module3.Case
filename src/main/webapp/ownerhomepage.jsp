@@ -49,7 +49,7 @@
                     <ul class="navbar-nav justify-content-between ">
                         <div class="User_option">
                             <li class="">
-                                <a class="mr-4" href="../addhouseform.jsp">
+                                <a class="mr-4" href="addhouseform.jsp">
                                     Thêm nhà
                                 </a>
                                 <a class="" href="index.jsp">
@@ -133,7 +133,7 @@
             <c:forEach var="house" items="${houses}">
                 <div class="box">
                     <div class="img-box">
-                        <img src="images/s-1.jpg" alt="">
+                        <img src="teaser-html/images/s-1.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h6>
@@ -179,7 +179,7 @@
                     </h5>
                     <div>
                         <div class="img-box">
-                            <img src="images/location.png" width="18px" alt="">
+                            <img src="teaser-html/images/location.png" width="18px" alt="">
                         </div>
                         <p>
                             Address
@@ -187,7 +187,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="images/phone.png" width="12px" alt="">
+                            <img src="teaser-html/images/phone.png" width="12px" alt="">
                         </div>
                         <p>
                             +01 1234567890
@@ -195,7 +195,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="images/mail.png" width="18px" alt="">
+                            <img src="teaser-html/images/mail.png" width="18px" alt="">
                         </div>
                         <p>
                             demo@gmail.com
@@ -266,16 +266,16 @@
                     </form>
                     <div class="social_box">
                         <a href="">
-                            <img src="images/fb.png" alt="">
+                            <img src="teaser-html/images/fb.png" alt="">
                         </a>
                         <a href="">
-                            <img src="images/twitter.png" alt="">
+                            <img src="teaser-html/images/twitter.png" alt="">
                         </a>
                         <a href="">
-                            <img src="images/linkedin.png" alt="">
+                            <img src="teaser-html/images/linkedin.png" alt="">
                         </a>
                         <a href="">
-                            <img src="images/youtube.png" alt="">
+                            <img src="teaser-html/images/youtube.png" alt="">
                         </a>
                     </div>
                 </div>

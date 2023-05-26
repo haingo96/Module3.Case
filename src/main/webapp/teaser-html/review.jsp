@@ -2,7 +2,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Basic -->
     <meta charset="utf-8" />
@@ -37,8 +36,18 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
+<<<<<<< HEAD:src/main/webapp/teaser-html/review.jsp
                 <a class="navbar-brand" href="../index.jsp">
                     <img src="images/logo.png" alt="" />
+=======
+<<<<<<< HEAD
+                <a class="navbar-brand" href="../index.jsp">
+                    <img src="teaser-html/images/logo.png" alt=""/>
+=======
+                <a class="navbar-brand" href="index.jsp">
+                    <img src="teaser-html/images/logo.png" alt="" />
+>>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
+>>>>>>> master:src/main/webapp/ownerhomepage.jsp
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -47,9 +56,19 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
+<<<<<<< HEAD:src/main/webapp/teaser-html/review.jsp
                                 <a class="" href="">
                                     Sign up
+=======
+                                <a class="" href="index.jsp">
+                                Đăng xuất
+                                <a class="mr-4" href="addhouseform.jsp">
+                                    Thêm nhà
+>>>>>>> master:src/main/webapp/ownerhomepage.jsp
                                 </a>
+                                <!--                                <a class="" href="">-->
+                                <!--                                    Sign up-->
+                                <!--                                </a>-->
                             </li>
                         </div>
                     </ul>

@@ -2,6 +2,7 @@ package controller;
 
 import model.Address;
 import model.House;
+import service.AddressManager;
 import service.HouseManager;
 
 import java.io.*;
@@ -28,6 +29,7 @@ public class OwnerServlet extends HttpServlet {
         switch (action) {
 
 
+
 //            case "displayRating":
 //                try {
 //                    displayRating(request, response);
@@ -38,9 +40,10 @@ public class OwnerServlet extends HttpServlet {
 //                }
 
 
-            case "editHouse":
-                showHouseEditForm(request, response);
-                break;
+//            case "editHouse":
+//                showHouseEditForm(request, response);
+//                break;
+
 
             case "deleteHouse":
                 deleteHouse(request, response);
@@ -73,9 +76,6 @@ public class OwnerServlet extends HttpServlet {
         }
 
         switch (action) {
-            case "submitEditHouse":
-                editHouse(request, response);
-                break;
             case "addHouse":
                 addNewHouse(request, response);
                 break;
@@ -85,54 +85,8 @@ public class OwnerServlet extends HttpServlet {
         }
     }
 
-    private void editHouse(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-
-        double price = Double.parseDouble(request.getParameter("price"));
-        String area = request.getParameter("area");
-        String type = request.getParameter("type");
-        String province = request.getParameter("province");
-        String district = request.getParameter("district");
-        String ward = request.getParameter("ward");
-        String description = request.getParameter("description");
-
-        House house = new House(id, price, area, type, new Address(province, district, ward), 2, description);
-        //        TODO: Sửa lai ownerId truyền vào constructor
-
-        HouseManager.updateHouseById(house);
-        displayAllHouse(request, response);
-    }
-
-    private void showHouseEditForm(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-
-        House house = HouseManager.getHouseById(id);
-        request.setAttribute("house", house);
-
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("editHouseForm.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     private void showHouseDetail(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
-
-        House house = HouseManager.getHouseById(id);
-        request.setAttribute("house", house);
-
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("houseDetail.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     private void deleteHouse(HttpServletRequest request, HttpServletResponse response) {

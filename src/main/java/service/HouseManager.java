@@ -14,9 +14,13 @@ public class HouseManager {
     private static final String SQL_PASSWORD = "C0223g1@";
 
     private static final String SQL_SELECT_ALL_HOUSE = "SELECT * FROM House;";
+
     private static final String SQL_INSERT_NEW_HOUSE = "INSERT INTO House VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, NULL, ?, ?);";
+
     private static final String SQL_DEL_HOUSE_BY_ID = "DELETE FROM House WHERE house_id = ?;";
+
     private static final String SQL_SELECT_HOUSE_BY_ID = "SELECT * FROM House WHERE house_id = ?;";
+
     private static final String SQL_UPDATE_HOUSE_BY_ID = "UPDATE House SET price = ?, area = ?, type = ?, address_id = ?, discription = ? WHERE house_id = ?;";
 
     public static Connection getConnection() {
@@ -44,6 +48,7 @@ public class HouseManager {
             while (resultSet.next()) {
                 int houseId = resultSet.getInt("house_id");
                 double price = resultSet.getDouble("price");
+
 //                LocalDate viewDate = resultSet.getDate("view_date").toLocalDate();
 //                LocalDate unavailableUntil = resultSet.getDate("unavaliable_until").toLocalDate();
 
@@ -124,7 +129,6 @@ public class HouseManager {
             AddressManager.insertNewAddress(address);
             int addressId = AddressManager.findAddressId(address);
             preparedStatement.setInt(7, addressId);
-
             preparedStatement.setInt(8, house.getOwnerId());
             preparedStatement.setString(9, house.getDescription());
 

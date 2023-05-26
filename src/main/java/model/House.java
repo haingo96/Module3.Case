@@ -10,9 +10,7 @@ public class House {
     private String area;
     private String type;
     private boolean status;
-    private int addressId;
     private Address address;
-
     private int renterId;
     private int ownerId;
     private String description;
@@ -109,13 +107,7 @@ public class House {
     public void setStatus(boolean status) {
         this.status = status;
     }
-    public int getAddressId() {
-        return addressId;
-    }
 
-    public void setAddressId(int addressId) {
-        this.addressId = addressId;
-    }
     public Address getAddress() {
         return address;
     }
