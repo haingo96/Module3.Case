@@ -17,14 +17,14 @@
 
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css" />
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="teaser-html/css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="teaser-html/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -33,18 +33,18 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="images/logo.png" alt="" />
+                <a class="navbar-brand" href="owner-servlet">
+                    <img src="teaser-html/images/logo.png" alt="" />
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
                         <div class="User_option">
                             <li class="">
-                                <a class="mr-4" href="">
-                                    Login
+                                <a class="mr-4" href="teaser-html/addhouseform.html">
+                                    Thêm nhà
                                 </a>
-                                <a class="" href="">
-                                    Sign up
+                                <a class="" href="index.jsp">
+                                    Đăng xuất
                                 </a>
                             </li>
                         </div>
@@ -65,11 +65,11 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../index.jsp">HOME</a>
-                            <a href="about.jsp">ABOUT</a>
-                            <a href="house.jsp">HOUSE</a>
-                            <a href="price.jsp">PRICING</a>
-                            <a href="contact.jsp">CONTACT US</a>
+                            <a href="index.jsp">HOME</a>
+                            <a href="teaser-html/about.jsp">ABOUT</a>
+                            <a href="teaser-html/house.jsp">HOUSE</a>
+                            <a href="teaser-html/price.jsp">PRICING</a>
+                            <a href="teaser-html/contact.jsp">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -86,37 +86,42 @@
     <div class="container">
         <div class="heading_container">
             <h2>
-                Get In Touch
+                Thêm nhà
             </h2>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 px-0">
-                <div class="map_container">
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
             <div class="col-lg-4 col-md-5 ">
                 <div class="form_container">
-                    <form action="">
+                    <form action="owner-servlet" method="post">
                         <div>
-                            <input type="text" placeholder="Name" />
+                            <input type="hidden" name="action" value="addHouse" />
                         </div>
                         <div>
-                            <input type="email" placeholder="Email" />
+                            <input type="number" name="price" placeholder="Giá" required="required" />
                         </div>
                         <div>
-                            <input type="text" placeholder="Phone Number" />
+                            <input type="text" name="area" placeholder="Diện tich" required="required" />
                         </div>
                         <div>
-                            <input type="text" class="message-box" placeholder="Message" />
+                            <input type="text" name="type" placeholder="Loại (căn hộ, nhà đất...)" required="required" />
+                        </div>
+                        <div>
+                            <input type="text" name="province" placeholder="Địa chỉ (Tỉnh)" required="required" />
+                        </div>
+                        <div>
+                            <input type="text" name="district" placeholder="Địa chỉ (Huyện)" required="required" />
+                        </div>
+                        <div>
+                            <input type="text" name="ward" placeholder="Địa chỉ (Phường, xã)" required="required" />
+                        </div>
+                        <div>
+                            <input type="text" class="message-box" name="description" placeholder="Mô tả" />
                         </div>
                         <div class="d-flex ">
                             <button>
-                                Send
+                                Thêm
                             </button>
                         </div>
                     </form>
@@ -142,7 +147,7 @@
                     </h5>
                     <div>
                         <div class="img-box">
-                            <img src="images/location.png" width="18px" alt="">
+                            <img src="teaser-html/images/location.png" width="18px" alt="">
                         </div>
                         <p>
                             Address
@@ -150,7 +155,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="images/phone.png" width="12px" alt="">
+                            <img src="teaser-html/images/phone.png" width="12px" alt="">
                         </div>
                         <p>
                             +01 1234567890
@@ -158,7 +163,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="images/mail.png" width="18px" alt="">
+                            <img src="teaser-html/images/mail.png" width="18px" alt="">
                         </div>
                         <p>
                             demo@gmail.com
@@ -229,16 +234,16 @@
                     </form>
                     <div class="social_box">
                         <a href="">
-                            <img src="images/fb.png" alt="">
+                            <img src="teaser-html/images/fb.png" alt="">
                         </a>
                         <a href="">
-                            <img src="images/twitter.png" alt="">
+                            <img src="teaser-html/images/twitter.png" alt="">
                         </a>
                         <a href="">
-                            <img src="images/linkedin.png" alt="">
+                            <img src="teaser-html/images/linkedin.png" alt="">
                         </a>
                         <a href="">
-                            <img src="images/youtube.png" alt="">
+                            <img src="teaser-html/images/youtube.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -262,9 +267,9 @@
 <!-- end  footer section -->
 
 
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="teaser-html/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="teaser-html/js/bootstrap.js"></script>
+<script type="text/javascript" src="teaser-html/js/custom.js"></script>
 
 </body>
 

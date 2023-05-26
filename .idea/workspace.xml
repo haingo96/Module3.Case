@@ -10,20 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f3c1b8-00d4-4fa5-8270-88294343692d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/editHouseForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/houseDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/House.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/AddressManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AddressManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/house.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addhouseform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addhouseform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/addhouseform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addhouseform.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +234,7 @@
       <workItem from="1684975245391" duration="34899000" />
       <workItem from="1685019182848" duration="1076000" />
       <workItem from="1685020278073" duration="9987000" />
-      <workItem from="1685062136972" duration="1835000" />
+      <workItem from="1685062136972" duration="3621000" />
     </task>
     <servers />
   </component>
