@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 @WebServlet(name = "ownerServlet", value = "/owner-servlet")
 public class OwnerServlet extends HttpServlet {
@@ -33,11 +34,23 @@ public class OwnerServlet extends HttpServlet {
                 break;
             case "detailHouse":
                 showHouseDetail(request, response);
+
                 break;
             default:
                 displayAllHouse(request, response);
                 break;
         }
+    }
+
+
+    private void displayRating(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("house_id"));
+        House houses = HouseManager.display(id);
+        request.setAttribute("house", houses);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("review.jsp");
+        request.setAttribute("user", houses);
+        dispatcher.forward(request, response);
+
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -133,19 +146,14 @@ public class OwnerServlet extends HttpServlet {
     }
 
     private void displayAllHouse(HttpServletRequest request, HttpServletResponse response) {
-        List<House> houses = HouseManager.selectAllHouse();
-        request.setAttribute("houses", houses);
+        List<House> houses1 = HouseManager.selectAllHouse();
+        request.setAttribute("houses", houses1);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("ownerhomepage.jsp");
         try {
             requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (IOException | ServletException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    public void destroy() {
     }
 }

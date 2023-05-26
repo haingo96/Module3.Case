@@ -52,8 +52,11 @@ public class Address {
     @Override
     public String toString() {
         return
-                " province : " + province + " "+
-                " district : " + district  + " " +
-                " ward : " + ward ;
+
+
+               province + " - " +
+               district + " - " +
+               ward;
+
     }
 }

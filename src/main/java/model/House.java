@@ -140,4 +140,21 @@ public class House {
     public void setDescription (String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "House{" +
+                "houseId=" + houseId +
+                ", price=" + price +
+                ", viewDate=" + viewDate +
+                ", unavailableUntil=" + unavailableUntil +
+                ", area='" + area + '\'' +
+                ", type='" + type + '\'' +
+                ", status=" + status +
+                ", address=" + address +
+                ", renterId=" + renterId +
+                ", ownerId=" + ownerId +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

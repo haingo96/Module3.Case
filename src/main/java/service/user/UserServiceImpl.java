@@ -19,6 +19,7 @@ public class UserServiceImpl implements UserService<User> {
     private static final String SELECT_USER = "select * from user where user_name=? and password = ? and role_id = ?";
 
     public UserServiceImpl() {
+
     }
 
 
@@ -114,6 +115,7 @@ public class UserServiceImpl implements UserService<User> {
                 preparedStatement.setString(4, null);
             }
             preparedStatement.setInt(5, user.getAge());
+
             if (user.getPhone_number() != "") {
                 preparedStatement.setString(6, user.getPhone_number());
             } else {
@@ -184,14 +186,15 @@ public class UserServiceImpl implements UserService<User> {
     }
 
     @Override
-    public User Sign_up(String user_name, String password, int role) {
-        try(Connection connection = connect.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER)){
-            preparedStatement.setString(1,user_name);
-            preparedStatement.setString(2,password);
-            preparedStatement.setInt(3,role);
-            ResultSet resultSet =preparedStatement.executeQuery();
-            while (resultSet.next()){
+    public User Sign_up(String user_name, String password, int role_id) {
+        try (Connection connection = connect.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER)) {
+            preparedStatement.setString(1, user_name);
+            preparedStatement.setString(2, password);
+            preparedStatement.setInt(3, role_id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
                 return new User(resultSet.getInt(1),
                         resultSet.getString(2),
                         resultSet.getInt(3),
@@ -202,7 +205,7 @@ public class UserServiceImpl implements UserService<User> {
                         resultSet.getString(8),
                         resultSet.getString(9));
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;

@@ -22,6 +22,6 @@ public interface UserService<E>{
 
     void delete(int index);
     User login(String user_name, String password);
-    User Sign_up(String user_name, String password, int role);
+    User Sign_up(String user_name, String password, int role_id);
 
 }

@@ -1,31 +1,33 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Basic -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>Teaser</title>
 
+
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css" />
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-
-    <link href="teaser-html/css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="teaser-html/css/responsive.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
 </head>
 
 <body class="sub_page">
@@ -34,19 +36,39 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
+<<<<<<< HEAD:src/main/webapp/teaser-html/review.jsp
+                <a class="navbar-brand" href="../index.jsp">
+                    <img src="images/logo.png" alt="" />
+=======
+<<<<<<< HEAD
+                <a class="navbar-brand" href="../index.jsp">
+                    <img src="teaser-html/images/logo.png" alt=""/>
+=======
                 <a class="navbar-brand" href="index.jsp">
                     <img src="teaser-html/images/logo.png" alt="" />
+>>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
+>>>>>>> master:src/main/webapp/ownerhomepage.jsp
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
                         <div class="User_option">
                             <li class="">
-                                <a class="mr-4" href="addhouseform.jsp">
-                                    Thêm nhà
+                                <a class="mr-4" href="">
+                                    Login
                                 </a>
+<<<<<<< HEAD:src/main/webapp/teaser-html/review.jsp
+                                <a class="" href="">
+                                    Sign up
+=======
                                 <a class="" href="index.jsp">
                                 Đăng xuất
+                                <a class="mr-4" href="addhouseform.jsp">
+                                    Thêm nhà
+>>>>>>> master:src/main/webapp/ownerhomepage.jsp
                                 </a>
+                                <!--                                <a class="" href="">-->
+                                <!--                                    Sign up-->
+                                <!--                                </a>-->
                             </li>
                         </div>
                     </ul>
@@ -66,11 +88,11 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="index.jsp">HOME</a>
-                            <a href="teaser-html/about.jsp">ABOUT</a>
-                            <a href="teaser-html/house.jsp">HOUSE</a>
-                            <a href="teaser-html/price.jsp">PRICING</a>
-                            <a href="teaser-html/contact.jsp">CONTACT US</a>
+                            <a href="../index.jsp">HOME</a>
+                            <a href="about.jsp">ABOUT</a>
+                            <a href="customer_servlet">HOUSE</a>
+                            <a href="price.jsp">PRICING</a>
+                            <a href="contact.jsp">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -79,61 +101,53 @@
     </header>
     <!-- end header section -->
 </div>
-<br>
-<br>
-<br>
-
 
 <!-- sale section -->
-<section class="sale_section layout_padding-bottom">
-    <div class="container">
+
+<section class="sale_section layout_padding">
+    <div class="container-fluid">
         <div class="heading_container">
             <h2>
-                Nhà của bạn
+                All House
             </h2>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <%--        <div class="heading_container">--%>
-        <%--            <h2>--%>
-        <%--                Your Houses--%>
-        <%--            </h2>--%>
-        <%--            <p>--%>
-        <%--                There are many variations of passages of Lorem Ipsum available, but the--%>
-        <%--            </p>--%>
-        <%--        </div>--%>
-        <div class="sale_container">
-            <c:forEach var="house" items="${houses}">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="teaser-html/images/s-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
-                        </h6>
-                        <p>
-                            Mã số: ${house.getHouseId()}
-                        </p>
-                        <p>
-                            Diện tích: ${house.getArea()}
-                        </p>
-                        <p>
-                            Giá: ${house.getPrice()}
-                        </p>
-                        <p>
-                            Trạng thái:
-                            <c:if test="${house.isStatus() == true}">
-                                <span> Đang có người ở</span>
-                            </c:if>
-                            <span>Đang trống </span>
-                        </p>
-                        <a href="/owner-servlet?action=editHouse&&id=${house.getHouseId()}"><button>Sửa thông tin</button></a>
-                        <a href="/owner-servlet?action=detailHouse&&id=${house.getHouseId()}"><button>Chi tiết</button></a>
-                        <a href="/owner-servlet?action=deleteHouse&&id=${house.getHouseId()}"><button>Xóa nhà</button></a>
-                    </div>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the
+            </p>
+            <c:if test="${house != null}">
+                <input type="hidden" name="house_id" value="<c:out value='${house.getHouseId()}' />"/>
+            </c:if>
+            <div class="detail-box">
+                <h6>
+                    Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
+                </h6>
+                <p>
+                    Diện tích: ${house.getArea()}
+                </p>
+                <p>
+                    Trạng thái:
+                    <c:if test="${house.isStatus() == true}">
+                        <span> Đang có người ở</span>
+                    </c:if>
+                    <span>Đang trống </span>
+                </p>
+                <div class="stars">
+                    <form action="">
+                        <input class="star star-5" id="star-5" type="radio" name="star"/>
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star"/>
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star"/>
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star"/>
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star"/>
+                        <label class="star star-1" for="star-1"></label>
+                    </form>
                 </div>
-            </c:forEach>
+            </div>
+        </div>
+        <div class="sale_container">
+
         </div>
     </div>
 </section>
@@ -153,7 +167,7 @@
                     </h5>
                     <div>
                         <div class="img-box">
-                            <img src="teaser-html/images/location.png" width="18px" alt="">
+                            <img src="images/location.png" width="18px" alt="">
                         </div>
                         <p>
                             Address
@@ -161,7 +175,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="teaser-html/images/phone.png" width="12px" alt="">
+                            <img src="images/phone.png" width="12px" alt="">
                         </div>
                         <p>
                             +01 1234567890
@@ -169,7 +183,7 @@
                     </div>
                     <div>
                         <div class="img-box">
-                            <img src="teaser-html/images/mail.png" width="18px" alt="">
+                            <img src="images/mail.png" width="18px" alt="">
                         </div>
                         <p>
                             demo@gmail.com
@@ -240,16 +254,16 @@
                     </form>
                     <div class="social_box">
                         <a href="">
-                            <img src="teaser-html/images/fb.png" alt="">
+                            <img src="images/fb.png" alt="">
                         </a>
                         <a href="">
-                            <img src="teaser-html/images/twitter.png" alt="">
+                            <img src="images/twitter.png" alt="">
                         </a>
                         <a href="">
-                            <img src="teaser-html/images/linkedin.png" alt="">
+                            <img src="images/linkedin.png" alt="">
                         </a>
                         <a href="">
-                            <img src="teaser-html/images/youtube.png" alt="">
+                            <img src="images/youtube.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -273,10 +287,11 @@
 <!-- end  footer section -->
 
 
-<script type="text/javascript" src="teaser-html/js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="teaser-html/js/bootstrap.js"></script>
-<script type="text/javascript" src="teaser-html/js/custom.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
+</body>
 </body>
 
 </html>
