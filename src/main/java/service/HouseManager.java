@@ -50,7 +50,7 @@ public class HouseManager {
                 Date date = resultSet.getDate("view_date");
                 LocalDate viewDate = date == null ? null : date.toLocalDate();
 
-                Date date1 = resultSet.getDate("unavaliable_until");
+                Date date1 = resultSet.getDate("unavailable_until");
                 LocalDate unavailableUntil = date == null ? null : date1.toLocalDate();
 
                 String area = resultSet.getString("area");
@@ -131,7 +131,7 @@ public class HouseManager {
                 Date date = resultSet.getDate("view_date");
                 LocalDate viewDate = date == null ? null : date.toLocalDate();
 
-                Date date1 = resultSet.getDate("unavaliable_until");
+                Date date1 = resultSet.getDate("unavailable_until");
                 LocalDate unavailableUntil = date == null ? null : date1.toLocalDate();
 
                 String area = resultSet.getString("area");
