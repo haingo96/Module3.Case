@@ -4,28 +4,28 @@
 <html>
 <head>
     <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Teaser</title>
 
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rating.css"/>
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet"/>
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
 
 </head>
@@ -36,66 +36,64 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-<<<<<<< HEAD:src/main/webapp/teaser-html/review.jsp
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="images/logo.png" alt="" />
-=======
-<<<<<<< HEAD
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="teaser-html/images/logo.png" alt=""/>
-=======
-                <a class="navbar-brand" href="index.jsp">
-                    <img src="teaser-html/images/logo.png" alt="" />
->>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
->>>>>>> master:src/main/webapp/ownerhomepage.jsp
-                </a>
-                <div class="navbar-collapse" id="">
-                    <ul class="navbar-nav justify-content-between ">
-                        <div class="User_option">
-                            <li class="">
-                                <a class="mr-4" href="">
-                                    Login
-                                </a>
-<<<<<<< HEAD:src/main/webapp/teaser-html/review.jsp
-                                <a class="" href="">
-                                    Sign up
-=======
-                                <a class="" href="index.jsp">
-                                Đăng xuất
-                                <a class="mr-4" href="addhouseform.jsp">
-                                    Thêm nhà
->>>>>>> master:src/main/webapp/ownerhomepage.jsp
-                                </a>
-                                <!--                                <a class="" href="">-->
-                                <!--                                    Sign up-->
-                                <!--                                </a>-->
-                            </li>
-                        </div>
-                    </ul>
 
-                    <div class="custom_menu-btn">
-                        <button onclick="openNav()">
+                <a class="navbar-brand" href="../index.jsp">
+                    <img src="images/logo.png" alt=""/>
+
+                    <a class="navbar-brand" href="../index.jsp">
+                        <img src="teaser-html/images/logo.png" alt=""/>
+
+
+                    </a>
+                    <div class="navbar-collapse" id="">
+                        <ul class="navbar-nav justify-content-between ">
+                            <div class="User_option">
+                                <li class="">
+                                    <a class="mr-4" href="">
+                                        Login
+                                    </a>
+                                    <a class="" href="">
+                                        Sign up
+
+                                        <a class="" href="../index.jsp">
+                                            Đăng xuất
+                                            <a class="mr-4" href="addhouseform.jsp">
+                                                Thêm nhà
+
+                                            </a>
+                                            <!--                                <a class="" href="">-->
+                                            <!--                                    Sign up-->
+                                            <!--                                </a>-->
+                                        </a>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+
+                        <div class="custom_menu-btn">
+                            <button onclick="openNav()">
                 <span class="s-1">
 
                 </span>
-                            <span class="s-2">
+                                <span class="s-2">
 
                 </span>
-                            <span class="s-3">
+                                <span class="s-3">
 
                 </span>
-                        </button>
-                    </div>
-                    <div id="myNav" class="overlay">
-                        <div class="overlay-content">
-                            <a href="../index.jsp">HOME</a>
-                            <a href="about.jsp">ABOUT</a>
-                            <a href="customer_servlet">HOUSE</a>
-                            <a href="price.jsp">PRICING</a>
-                            <a href="contact.jsp">CONTACT US</a>
+                            </button>
+                        </div>
+                        <div id="myNav" class="overlay">
+                            <div class="overlay-content">
+                                <a href="../index.jsp">HOME</a>
+                                <a href="about.jsp">ABOUT</a>
+                                <a href="customer_servlet">HOUSE</a>
+                                <a href="price.jsp">PRICING</a>
+                                <a href="contact.jsp">CONTACT US</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </nav>
         </div>
     </header>
@@ -113,12 +111,14 @@
             <p>
                 There are many variations of passages of Lorem Ipsum available, but the
             </p>
-            <c:if test="${house != null}">
-                <input type="hidden" name="house_id" value="<c:out value='${house.getHouseId()}' />"/>
-            </c:if>
+            <c:forEach var="house" items="${house}">
+<%--            <c:if test="${house != null}">--%>
+<%--                <input type="hidden" name="house_id" value="<c:out value='${house.getHouseId()}' />"/>--%>
+<%--            </c:if>--%>
             <div class="detail-box">
                 <h6>
-                    Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
+                    Địa
+                    chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
                 </h6>
                 <p>
                     Diện tích: ${house.getArea()}
@@ -153,7 +153,6 @@
 </section>
 
 <!-- end sale section -->
-
 
 
 <!-- info section -->

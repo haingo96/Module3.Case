@@ -49,7 +49,6 @@ public class OwnerServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("review.jsp");
         request.setAttribute("user", houses);
         dispatcher.forward(request, response);
-
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
