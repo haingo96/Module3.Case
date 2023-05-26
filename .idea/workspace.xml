@@ -9,53 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f3c1b8-00d4-4fa5-8270-88294343692d" name="Changes" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="87877a71-2941-48f5-b7c7-383d5b76e432" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___Case_1_0_SNAPSHOT_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___Case_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/casestudy/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/casestudy/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HouseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/user/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/house.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/price.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teaser-html/price.jsp" afterDir="false" />
->>>>>>> a5041515489de2a148922ed51ecca69751ee946f
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/user/customer_Information.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/customer_Information.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/user/edit_Customer_Information.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/edit_Customer_Information.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teaser-html/user/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/sign_up.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
->>>>>>> a5041515489de2a148922ed51ecca69751ee946f
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -121,10 +95,6 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QDedsusVBvcoY0Y4ZlL8hXPTzw" />
-<<<<<<< HEAD
-=======
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
->>>>>>> a5041515489de2a148922ed51ecca69751ee946f
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -134,25 +104,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
-=======
-    "git-widget-placeholder": "Merging hai__owner__features",
->>>>>>> a5041515489de2a148922ed51ecca69751ee946f
-    "last_opened_file_path": "D:/Module3.Case",
+    "last_opened_file_path": "D:/codegym/module1_2_3/Casemd2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-<<<<<<< HEAD
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-=======
-    "settings.editor.selected.configurable": "preferences.pluginManager",
->>>>>>> a5041515489de2a148922ed51ecca69751ee946f
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -160,12 +123,14 @@
       <recent name="D:\Module3.Case\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\New folder 1\Module3.Case\src\main\webapp" />
+      <recent name="D:\New folder 1\Module3.Case\src\main\webapp\WEB-INF" />
       <recent name="D:\Module3.Case\src\main\webapp" />
       <recent name="D:\Module3.Case\src\main\webapp\about" />
       <recent name="D:\Module3.Case\src\main\webapp\teaser-html" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.75">
+  <component name="RunManager" selected="Tomcat Server.tomcat">
     <configuration name="CustomerService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="service.CustomerService" />
       <module name="Case.main" />
@@ -190,8 +155,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Owenr" />
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.86" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : com.example : Case-1.0-SNAPSHOT.war">
@@ -278,6 +242,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CustomerService" />
+      <item itemvalue="Tomcat Server.tomcat" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CustomerService" />
@@ -321,5 +289,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/UserServlet.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/UserServlet.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/UserServlet.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

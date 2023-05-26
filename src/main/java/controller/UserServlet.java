@@ -164,25 +164,17 @@ public class UserServlet extends HttpServlet {
         }
     }
 
-    private void loginCustomer_Information(HttpServletRequest request, HttpServletResponse response) {
-        String user_name = request.getParameter("user_name");
+    private void loginCustomer_Information(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String user_name = request.getParameter("username");
         String password = request.getParameter("password");
         User user = userServiceImpl.login(user_name, password);
         HttpSession session = request.getSession();
-        session.setAttribute("user_name", user_name);
         if (user == null) {
-            try {
-                response.sendRedirect("user?action=login");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            response.sendRedirect("user?action=login");
         } else {
-            try {
-                response.sendRedirect("user");
-                session.setAttribute("id", user.getId());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            session.setAttribute("id", user.getId());
+            session.setAttribute("user_name", user_name);
+            response.sendRedirect("user");
         }
     }
 }
