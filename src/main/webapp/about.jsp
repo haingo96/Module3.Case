@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 
@@ -17,14 +18,14 @@
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="teaser-html/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="teaser-html/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -33,8 +34,8 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="../index.jsp">
-            <img src="images/logo.png" alt="" />
+          <a class="navbar-brand" href="index.jsp">
+            <img src="teaser-html/images/logo.png" alt="" />
           </a>
           <div class="navbar-collapse" id="">
             <ul class="navbar-nav justify-content-between ">
@@ -65,11 +66,11 @@
             </div>
             <div id="myNav" class="overlay">
               <div class="overlay-content">
-                <a href="../index.jsp">HOME</a>
+                <a href="index.jsp">HOME</a>
                 <a href="about.jsp">ABOUT</a>
                 <a href="house.jsp">HOUSE</a>
-                <a href="price.jsp">PRICING</a>
-                <a href="contact.jsp">CONTACT US</a>
+                <a href="teaser-html/price.jsp">PRICING</a>
+                <a href="teaser-html/contact.jsp">CONTACT US</a>
               </div>
             </div>
           </div>
@@ -79,108 +80,52 @@
     <!-- end header section -->
   </div>
 
-  <!-- sale section -->
 
-  <section class="sale_section layout_padding">
-    <div class="container-fluid">
-      <div class="heading_container">
-        <h2>
-          House For Sale
-        </h2>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but the
-        </p>
-      </div>
-      <div class="sale_container">
-        <div class="box">
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="square-box">
+      <img src="teaser-html/images/square.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
           <div class="img-box">
-            <img src="images/s-1.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
+            <img src="teaser-html/images/about-img.jpg" alt="">
           </div>
         </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt="">
-          </div>
+        <div class="col-md-6">
           <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
+            <div class="heading_container">
+              <h2>
+                About Our Apartment
+              </h2>
+              <c:forEach var="house" items="${house}">
+            </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but
+              ${house.getHouseId()}
+              ${house.getPrice()}
+              ${house.getViewDate()}
+              ${house.getUnavailableUntil()}
+              ${house.getArea()}
+              ${house.getType()}
+              ${house.isStatus()}
+              ${house.getAddress()}
+              ${house.getRenterId()}
+              ${house.ownerId}
+              ${house.getDescription()}
             </p>
+            <a href="">
+              Read More
+            </a>
           </div>
+          </c:forEach>
         </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-4.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-5.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-6.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          Find More
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- end sale section -->
-
+  <!-- end about section -->
 
 
   <!-- info section -->
@@ -194,7 +139,7 @@
             </h5>
             <div>
               <div class="img-box">
-                <img src="images/location.png" width="18px" alt="">
+                <img src="teaser-html/images/location.png" width="18px" alt="">
               </div>
               <p>
                 Address
@@ -202,7 +147,7 @@
             </div>
             <div>
               <div class="img-box">
-                <img src="images/phone.png" width="12px" alt="">
+                <img src="teaser-html/images/phone.png" width="12px" alt="">
               </div>
               <p>
                 +01 1234567890
@@ -210,7 +155,7 @@
             </div>
             <div>
               <div class="img-box">
-                <img src="images/mail.png" width="18px" alt="">
+                <img src="teaser-html/images/mail.png" width="18px" alt="">
               </div>
               <p>
                 demo@gmail.com
@@ -281,16 +226,16 @@
             </form>
             <div class="social_box">
               <a href="">
-                <img src="images/fb.png" alt="">
+                <img src="teaser-html/images/fb.png" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="teaser-html/images/twitter.png" alt="">
               </a>
               <a href="">
-                <img src="images/linkedin.png" alt="">
+                <img src="teaser-html/images/linkedin.png" alt="">
               </a>
               <a href="">
-                <img src="images/youtube.png" alt="">
+                <img src="teaser-html/images/youtube.png" alt="">
               </a>
             </div>
           </div>
@@ -314,9 +259,9 @@
   <!-- end  footer section -->
 
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="teaser-html/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="teaser-html/js/bootstrap.js"></script>
+  <script type="text/javascript" src="teaser-html/js/custom.js"></script>
 
 </body>
 </body>
