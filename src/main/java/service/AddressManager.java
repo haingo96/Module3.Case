@@ -50,7 +50,13 @@ public class AddressManager {
             preparedStatement.setString(3, address.getWard());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            if (e.getSQLState().equals("23000") && e.getMessage().contains("Duplicate entry")) {
+                // handle duplicate entry exception here
+                System.out.println("Value already exists in unique column.");
+            } else {
+                // handle other SQL exceptions here
+                e.printStackTrace();
+            }
         }
     }
 

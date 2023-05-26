@@ -33,7 +33,7 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="index.jsp">
+                <a class="navbar-brand" href="owner-servlet">
                     <img src="teaser-html/images/logo.png" alt="" />
                 </a>
                 <div class="navbar-collapse" id="">
@@ -43,9 +43,9 @@
                                 <a class="mr-4" href="addhouseform.jsp">
                                     Thêm nhà
                                 </a>
-                                <!--                                <a class="" href="">-->
-                                <!--                                    Sign up-->
-                                <!--                                </a>-->
+                                <a class="" href="index.jsp">
+                                Đăng xuất
+                                </a>
                             </li>
                         </div>
                     </ul>
@@ -111,6 +111,9 @@
                         <h6>
                             Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
                         </h6>
+                        <p>
+                            Mã số: ${house.getHouseId()}
+                        </p>
                         <p>
                             Diện tích: ${house.getArea()}
                         </p>
