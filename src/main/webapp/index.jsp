@@ -15,6 +15,7 @@
 
     <title>Teaser</title>
 
+
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css"/>
 
@@ -46,15 +47,9 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-<<<<<<< HEAD
                                 <a class="" href="">
                                     Sign up
                                 </a>
-=======
-<%--                                <a class="" href="">--%>
-<%--                                    Sign up--%>
-<%--                                </a>--%>
->>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
                             </li>
                         </div>
                     </ul>
@@ -75,8 +70,8 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
-                            <a href="teaser-html/about.jsp">ABOUT</a>
-                            <a href="teaser-html/house.jsp">HOUSE</a>
+                            <a href="about.jsp">ABOUT</a>
+                            <a href="house.jsp">HOUSE</a>
                             <a href="teaser-html/price.jsp">PRICING</a>
                             <a href="teaser-html/contact.jsp">CONTACT US</a>
                         </div>
@@ -114,23 +109,27 @@
 </div>
 
 <!-- find section -->
+
 <section class="find_section ">
     <div class="container">
         <form action="">
             <div class=" form-row">
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Serach Your Categories ">
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Location ">
-                </div>
-                <div class="col-md-2">
+                    <input type="text" name="form-control" class="form-control" placeholder="Search Your Address">
+                    <input type="hidden" name="action" value="search">
                     <button type="submit" class="">
                         search
                     </button>
+                    <%--                </div>--%>
+                    <%--&lt;%&ndash;                <div class="col-md-5">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                    <input type="text" name="form-control1" class="form-control" placeholder="Unavaliable Until">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                    <input type="hidden" name="action" value="search">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+                    <%--                <div class="col-md-2">--%>
+                    <%--                   --%>
+                    <%--                </div>--%>
                 </div>
             </div>
-
         </form>
     </div>
 </section>

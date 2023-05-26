@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Basic -->
     <meta charset="utf-8"/>
@@ -33,8 +32,13 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="owner-servlet">
+<<<<<<< HEAD
+                <a class="navbar-brand" href="../index.jsp">
+                    <img src="teaser-html/images/logo.png" alt=""/>
+=======
+                <a class="navbar-brand" href="index.jsp">
                     <img src="teaser-html/images/logo.png" alt="" />
+>>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -45,7 +49,12 @@
                                 </a>
                                 <a class="" href="index.jsp">
                                 Đăng xuất
+                                <a class="mr-4" href="addhouseform.jsp">
+                                    Thêm nhà
                                 </a>
+                                <!--                                <a class="" href="">-->
+                                <!--                                    Sign up-->
+                                <!--                                </a>-->
                             </li>
                         </div>
                     </ul>
