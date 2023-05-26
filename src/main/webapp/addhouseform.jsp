@@ -33,10 +33,14 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
+<<<<<<< HEAD
                 <a class="navbar-brand" href="index.jsp">
 <<<<<<<< HEAD:src/main/webapp/addhouseform.html
                     <img src="images/logo.png" alt="" />
 ========
+=======
+                <a class="navbar-brand" href="owner-servlet">
+>>>>>>> 543966c94276ee91cc97d017872b26347473dcc8
                     <img src="teaser-html/images/logo.png" alt="" />
 >>>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105:src/main/webapp/addhouseform.jsp
                 </a>
@@ -47,9 +51,9 @@
                                 <a class="mr-4" href="teaser-html/addhouseform.html">
                                     Thêm nhà
                                 </a>
-<!--                                <a class="" href="">-->
-<!--                                    Sign up-->
-<!--                                </a>-->
+                                <a class="" href="index.jsp">
+                                    Đăng xuất
+                                </a>
                             </li>
                         </div>
                     </ul>

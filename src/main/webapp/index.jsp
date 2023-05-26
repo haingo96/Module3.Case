@@ -28,7 +28,7 @@
 
 <body>
 
-<%--<% response.sendRedirect("/owner-servlet");%>--%>
+<% response.sendRedirect("/owner-servlet");%>
 <%--TODO: tạm thời send redirect sang ownerhp, nhớ xóa--%>
 
 <div class="hero_area">
@@ -46,9 +46,9 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-                                <%--                                <a class="" href="">--%>
-                                <%--                                    Sign up--%>
-                                <%--                                </a>--%>
+                                <a class="" href="">
+                                    Sign up
+                                </a>
                             </li>
                         </div>
                     </ul>

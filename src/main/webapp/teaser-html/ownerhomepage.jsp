@@ -24,24 +24,26 @@
     <title>Teaser</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="teaser-html/css/bootstrap.css"/>
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet"/>
+
+    <link href="teaser-html/css/style.css" rel="stylesheet"/>
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet"/>
+    <link href="teaser-html/css/responsive.css" rel="stylesheet"/>
 </head>
 
-<body class="sub_page">
+<body>
+
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="images/logo.png" alt="" />
+                <a class="navbar-brand" href="owner-servlet">
+                    <img src="teaser-html/images/logo.png" alt="" />
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -50,9 +52,9 @@
                                 <a class="mr-4" href="../addhouseform.jsp">
                                     Thêm nhà
                                 </a>
-                                <!--                                <a class="" href="">-->
-                                <!--                                    Sign up-->
-                                <!--                                </a>-->
+                                <a class="" href="index.jsp">
+                                Đăng xuất
+                                </a>
                             </li>
                         </div>
                     </ul>
@@ -72,11 +74,11 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../index.jsp">HOME</a>
-                            <a href="about.jsp">ABOUT</a>
-                            <a href="ownerhomepage.jsp">HOUSE</a>
-                            <a href="price.jsp">PRICING</a>
-                            <a href="contact.jsp">CONTACT US</a>
+                            <a href="index.jsp">HOME</a>
+                            <a href="teaser-html/about.jsp">ABOUT</a>
+                            <a href="teaser-html/house.jsp">HOUSE</a>
+                            <a href="teaser-html/price.jsp">PRICING</a>
+                            <a href="teaser-html/contact.jsp">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -138,6 +140,9 @@
                             Địa chỉ: ${house.getAddress().getWard()}, ${house.getAddress().getDistrict()}, ${house.getAddress().getProvince()}
                         </h6>
                         <p>
+                            Mã số: ${house.getHouseId()}
+                        </p>
+                        <p>
                             Diện tích: ${house.getArea()}
                         </p>
                         <p>
@@ -161,7 +166,6 @@
 </section>
 
 <!-- end sale section -->
-
 
 
 <!-- info section -->
@@ -295,9 +299,9 @@
 <!-- end  footer section -->
 
 
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="teaser-html/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="teaser-html/js/bootstrap.js"></script>
+<script type="text/javascript" src="teaser-html/js/custom.js"></script>
 
 
 </body>
