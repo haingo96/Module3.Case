@@ -32,6 +32,7 @@
 <%--<% response.sendRedirect("/owner-servlet");%>--%>
 <%--TODO: tạm thời send redirect sang ownerhp, nhớ xóa--%>
 
+
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -50,6 +51,12 @@
                                 <%--                                <a class="" href="">--%>
                                 <%--                                    Sign up--%>
                                 <%--                                </a>--%>
+                                <a class="" href="">
+                                    Sign up
+                                </a>
+<%--                                <a class="" href="">--%>
+<%--                                    Sign up--%>
+<%--                                </a>--%>
                             </li>
                         </div>
                     </ul>

@@ -32,6 +32,26 @@ public class House {
         this.description = description;
     }
 
+    public House(double price, String area, String type, boolean status, Address address, int ownerId, String description) {
+        this.price = price;
+        this.area = area;
+        this.type = type;
+        this.status = status;
+        this.address = address;
+        this.ownerId = ownerId;
+        this.description = description;
+    }
+
+    public House(int houseId, double price, String area, String type, Address address, int ownerId, String description) {
+        this.houseId = houseId;
+        this.price = price;
+        this.area = area;
+        this.type = type;
+        this.address = address;
+        this.ownerId = ownerId;
+        this.description = description;
+    }
+
     public int getHouseId() {
         return houseId;
     }
@@ -117,7 +137,7 @@ public class House {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription (String description) {
         this.description = description;
     }
 }
