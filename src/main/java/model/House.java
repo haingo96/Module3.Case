@@ -11,12 +11,39 @@ public class House {
     private String type;
     private boolean status;
     private int addressId;
+    private Address address;
+
     private int renterId;
     private int ownerId;
     private String description;
 
     public House() {
     }
+
+    public House(int houseId, double price, LocalDate viewDate, LocalDate unavailableUntil, String area, String type, boolean status, Address address, int renterId, int ownerId, String description) {
+        this.houseId = houseId;
+        this.price = price;
+        this.viewDate = viewDate;
+        this.unavailableUntil = unavailableUntil;
+        this.area = area;
+        this.type = type;
+        this.status = status;
+        this.address = address;
+        this.renterId = renterId;
+        this.ownerId = ownerId;
+        this.description = description;
+    }
+
+    public House(double price, String area, String type, boolean status, Address address, int ownerId, String description) {
+        this.price = price;
+        this.area = area;
+        this.type = type;
+        this.status = status;
+        this.address = address;
+        this.ownerId = ownerId;
+        this.description = description;
+    }
+
 
     public int getHouseId() {
         return houseId;
@@ -73,13 +100,20 @@ public class House {
     public void setStatus(boolean status) {
         this.status = status;
     }
-
     public int getAddressId() {
         return addressId;
     }
 
     public void setAddressId(int addressId) {
         this.addressId = addressId;
+    }
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+
     }
 
     public int getRenterId() {
@@ -102,7 +136,7 @@ public class House {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription (String description) {
         this.description = description;
     }
 }
