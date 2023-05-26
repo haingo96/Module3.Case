@@ -32,10 +32,6 @@
 <% response.sendRedirect("/owner-servlet");%>
 <%--TODO: tạm thời send redirect sang ownerhp, nhớ xóa--%>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -51,21 +47,9 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-<<<<<<< HEAD
                                 <a class="" href="">
                                     Sign up
                                 </a>
-=======
-                                <%--                                <a class="" href="">--%>
-                                <%--                                    Sign up--%>
-                                <%--                                </a>--%>
-                                <a class="" href="">
-                                    Sign up
-                                </a>
-<%--                                <a class="" href="">--%>
-<%--                                    Sign up--%>
-<%--                                </a>--%>
->>>>>>> master
                             </li>
                         </div>
                     </ul>

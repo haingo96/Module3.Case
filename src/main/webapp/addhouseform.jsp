@@ -33,16 +33,8 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-<<<<<<< HEAD
-                <a class="navbar-brand" href="index.jsp">
-<<<<<<<< HEAD:src/main/webapp/addhouseform.html
-                    <img src="images/logo.png" alt="" />
-========
-=======
                 <a class="navbar-brand" href="owner-servlet">
->>>>>>> 543966c94276ee91cc97d017872b26347473dcc8
                     <img src="teaser-html/images/logo.png" alt="" />
->>>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105:src/main/webapp/addhouseform.jsp
                 </a>
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
@@ -74,17 +66,10 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="index.jsp">HOME</a>
-<<<<<<<< HEAD:src/main/webapp/addhouseform.html
-                            <a href="teaser-html/about.jsp">ABOUT</a>
-                            <a href="house.jsp">HOUSE</a>
-                            <a href="teaser-html/price.jsp">PRICING</a>
-                            <a href="teaser-html/contact.jsp">CONTACT US</a>
-========
                             <a href="teaser-html/about.jsp">ABOUT</a>
                             <a href="teaser-html/house.jsp">HOUSE</a>
                             <a href="teaser-html/price.jsp">PRICING</a>
                             <a href="teaser-html/contact.jsp">CONTACT US</a>
->>>>>>>> 775edaa36640405d206fd5ad67fd00dc00b9f105:src/main/webapp/addhouseform.jsp
                         </div>
                     </div>
                 </div>
