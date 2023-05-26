@@ -85,8 +85,8 @@ public class HouseManager {
         // using try-with-resources to avoid closing resources (boiler plate code)
         // Step 1: Establishing a Connection
         try (Connection connection = getConnection();
-                // Step 2:Create a statement using connection object
-                PreparedStatement preparedStatement = connection.prepareStatement(SQL_SELECT_ALL_HOUSE);) {
+             // Step 2:Create a statement using connection object
+             PreparedStatement preparedStatement = connection.prepareStatement(SQL_SELECT_ALL_HOUSE);) {
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
             ResultSet rs = preparedStatement.executeQuery();
@@ -104,7 +104,7 @@ public class HouseManager {
                 int renterId = rs.getInt("renter_id");
                 int ownerId = rs.getInt("owner_id");
                 String description = rs.getString("discription");
-                house = new House(houseId, price, viewDate, unavailableUntil,area,type,status,address,renterId,ownerId,description);
+                house = new House(houseId, price, viewDate, unavailableUntil, area, type, status, address, renterId, ownerId, description);
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -149,6 +149,7 @@ public class HouseManager {
             throw new RuntimeException(e);
         }
     }
+
     public static House getHouseById(int id) {
         Connection connection = getConnection();
         PreparedStatement preparedStatement;
@@ -214,4 +215,3 @@ public class HouseManager {
         }
     }
 }
-

@@ -1,4 +1,5 @@
 package controller;
+
 import model.House;
 import service.CustomerService;
 import service.HouseManager;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/Customer")
 
-public class CustomerServlet extends HttpServlet{
+public class CustomerServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
     private CustomerService customerList;
@@ -24,28 +25,32 @@ public class CustomerServlet extends HttpServlet{
         customerList = new CustomerService();
     }
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
         String action = request.getParameter("action");
         if (action == null) {
             action = "";
         }
+
         try {
             switch (action) {
                 case "search":
                     searchFromHouse(request, response);
                     break;
                 case "searchDate":
-                    searchFromDate(request,response);
+                    searchFromDate(request, response);
                     break;
                 case "view":
-                    viewCustomer(request,response);
+                    viewCustomer(request, response);
                     break;
                 default:
                     listCustomer(request, response);
                     break;
             }
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ServletException e) {
             e.printStackTrace();
         }
     }
@@ -61,8 +66,10 @@ public class CustomerServlet extends HttpServlet{
                 case "search":
                     break;
                 case "searchDate":
-                    searchFromDate(request,response);
+                    searchFromDate(request, response);
                     break;
+                case "displayRating":
+                    displayRating(request, response);
                 default:
                     listCustomer(request, response);
                     break;
@@ -98,12 +105,12 @@ public class CustomerServlet extends HttpServlet{
         String stt = request.getParameter("dateSearch1");
 
         List<House> house = null;
-        if(date.equals("") && stt.equals("")){
+        if (date.equals("") && stt.equals("")) {
             house = new ArrayList<>();
-        }else {
-            LocalDate  searchDate = LocalDate.parse(request.getParameter("dateSearch"));
+        } else {
+            LocalDate searchDate = LocalDate.parse(request.getParameter("dateSearch"));
             int status = Integer.parseInt(request.getParameter("dateSearch1"));
-            house = customerList.findIndexID(status,searchDate);
+            house = customerList.findIndexID(status, searchDate);
         }
         RequestDispatcher dispatcher;
         if (house.isEmpty()) {
@@ -129,17 +136,15 @@ public class CustomerServlet extends HttpServlet{
     }
 
 
-
     private void viewCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int house_id = Integer.parseInt(request.getParameter("house_id"));
         House house = customerList.findIndex(house_id);
         RequestDispatcher dispatcher;
-            request.setAttribute("house", house);
-            dispatcher = request.getRequestDispatcher("about.jsp");
-            dispatcher.forward(request, response);
+        request.setAttribute("house", house);
+        dispatcher = request.getRequestDispatcher("about.jsp");
+        dispatcher.forward(request, response);
 //        response.sendRedirect("about.jsp");
     }
-
 
 
     private void displayRating(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
@@ -152,5 +157,3 @@ public class CustomerServlet extends HttpServlet{
     }
 
 }
-
-

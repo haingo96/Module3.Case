@@ -53,9 +53,10 @@ public class Address {
     public String toString() {
         return
 
+
                province + " - " +
                district + " - " +
-               ward
-                ;
+               ward;
+
     }
 }

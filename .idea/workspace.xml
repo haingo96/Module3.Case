@@ -43,6 +43,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_24_2023_9_00_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwenrServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CustomerService.java" afterDir="false" />
@@ -50,6 +51,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/house.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/house.jsp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" afterDir="false" />
+>>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
 =======
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OwnerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ownerhomepage.jsp" afterDir="false" />
@@ -153,7 +159,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "last_opened_file_path": "D:/Quan_ly_ung_dung",
+=======
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Module3.Case",
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
 =======
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/Module3.Case",
@@ -207,9 +218,15 @@
     </configuration>
     <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Customer" />
 =======
 <<<<<<< HEAD
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8888/Owenr" />
+=======
+>>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
+=======
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8888/Owenr" />
 =======
 >>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
@@ -302,8 +319,11 @@
       </method>
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -318,6 +338,9 @@
     </configuration>
 =======
 >>>>>>> aa251014ce36c2eaf460f2354ecda46ad44fd46d
+<<<<<<< HEAD
+>>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
+=======
 >>>>>>> 449201ec864b799f583cdc8777347a52d8c37280
     <list>
       <item itemvalue="Application.CustomerService" />
